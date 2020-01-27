@@ -11,7 +11,7 @@ function Footer() {
     <div>
 
       <footer>
-        <div className="footer-text">
+        <div className="footer-icons">
 
           <a href="https://www.facebook.com/peterpandonuts/">
             <img src={facebook} />
@@ -31,12 +31,12 @@ function Footer() {
 
         </div>
 
-        <div className="footer-icons">
+        <div className="footer-text">
           2020 All Rights Reserved
         </div>
 
         <div className="footer-phone">
-          (718) 389-3676
+          <a href="tel:1-718-389-3676">(718) 389-3676</a>
         </div>
 
       </footer>
