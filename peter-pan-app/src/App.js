@@ -1,4 +1,10 @@
 import React, { Component } from "react";
+
+//Custom Components
+import Location from "./Components/Location";
+import Story from "./Components/Story";
+
+//CSS Component
 import "./App.css";
 
 class App extends Component {
@@ -9,7 +15,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Peter Pan</h1>
+        <Location />
+        <Story />
       </div>
     );
   }
