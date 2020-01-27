@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-import Donuts from './components/Donuts.js';
-import Contact from './components/Contact.js';
+import Donuts from './Components/Donuts.js';
+import Contact from './Components/Contact.js';
 
 
 // Custom components
