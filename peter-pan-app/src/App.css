@@ -37,10 +37,18 @@
   justify-content: center;
 }
 
-.carousel-images {
+.carousel {
   width: 100vw;
-  height: 60vh;
+}
+
+.carousel-images {
+  width: 100%;
+  height: 75vh;
   object-fit: cover;
+}
+
+#carousel-image3 {
+  object-position: 0% 20%;
 }
 
 /* .tns-controls {
