@@ -6,7 +6,28 @@
   height: 1008px;
   border: solid 1px #979797;
   background-color: #d16e99;
+
+.App {
+  margin: 0 auto
+}
+
+.fixed-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  background-color: #a8426e;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
   text-align: center;
+  min-height: 60px;
+  color: #f1f1f1;  
 }
 
 .contact-header {
@@ -56,6 +77,76 @@
 
 .we-love .text-style-1 {
   color: white;
+ }
+  
+.fixed-header p {
+  margin: 10px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 15px;
+  min-height: 30px;
+  align-items: center;
+  background-color: #5abdac;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-family: Arial;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal; 
+  color: #355142;
+  margin: 10px;
+}
+
+.designed-by {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #132315;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #24522a;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-weight: bold;
+  align-items: center;
+  min-height: 84px;
+  font-size: 15px;
+  font-family: 'Work Sans', sans-serif;
+  border: solid 1px #979797;
+  background-color: #5abdac;
+  justify-content: space-between;
+
+}
+
+.footer-icons, .footer-text, .footer-phone{
+  margin: 0 20px; 
 }
 
 .donuts {
@@ -159,4 +250,13 @@
   height: 80vh;
   width: 100vw;
   opacity: 0.62;
+
+.footer-text a {
+  margin: 0 10px; 
+  text-decoration: none;
 }
+
+footer img {
+  height: 50px;
+}
+
