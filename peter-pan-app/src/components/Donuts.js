@@ -2,7 +2,7 @@ import React from "react";
 
 const Donuts = () => {
   return (
-    <div className="donuts">
+    <div className="donuts" id="donuts">
       <div className="image">
         <h1 className="section-header">DONUTS</h1>
       </div>

@@ -6,6 +6,7 @@
   height: 1008px;
   border: solid 1px #979797;
   background-color: #d16e99;
+}
 
 .App {
   margin: 0 auto
@@ -250,6 +251,7 @@ footer {
   height: 80vh;
   width: 100vw;
   opacity: 0.62;
+}
 
 .footer-text a {
   margin: 0 10px; 
