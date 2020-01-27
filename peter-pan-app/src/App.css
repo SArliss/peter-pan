@@ -17,6 +17,7 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
+  min-height: 60px;
   color: #f1f1f1;  
 }
 
@@ -26,7 +27,24 @@ nav {
   flex-direction: row;
   justify-content: space-evenly;
   margin: 0 auto;
-  height: 70px;
+  padding: 15px;
+  min-height: 30px;
+  align-items: center;
   background-color: #5abdac;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-family: Arial;
 }
+
+nav a {
+  text-decoration: none ;
+  font-size: 18px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal; 
+  color: #355142;
+}
+
+
 

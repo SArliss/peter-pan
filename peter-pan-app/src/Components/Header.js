@@ -11,10 +11,11 @@ function Header() {
       </div>
 
       <nav>
-        
+        <a href="/#location">HOURS & LOCATION</a>
+        <a href="/#story">OUR STORY</a>
+        <a href="/#donuts">DONUTS</a>
+        <a href="/#contact">CONTACT US</a>
       </nav>
-
-      
 
     </div>
   )
