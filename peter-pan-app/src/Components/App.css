@@ -80,8 +80,7 @@ button {
 } */
 
 nav {
-  position: sticky;
-  top: -1px;
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:700,400|Raleway:700");
 
 .App {
-  display: flex;
+  display: block;
   flex-direction: column;
   /* justify-content: space-evenly; */
   width: 100vw;
+  height: 100vh;
   background-color: #ffecec;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  z-index: -1;
 }
 
 .fixed-header {
@@ -74,16 +78,21 @@ button {
   width: 5vw;
 } */
 
-nav {
+.fixed-wrapper {
+  overflow: scroll;
+  z-index: 10;
   position: sticky;
   top: -1px;
+  width: 100%;
+}
+
+nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   margin: 0 auto;
   padding: 15px;
-  min-height: 30px;
   align-items: center;
   background-color: #5abdac;
   line-height: normal;
@@ -114,7 +123,7 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-image: url(./Images/location-section-image.png);
+  background-image: url('./Images/location-section-image.png');
   width: 100vw;
   height: 382px;
   opacity: 0.48;
@@ -130,11 +139,12 @@ nav a {
   color: #24522a;
 }
 
-.location-div {
-  margin-top: 190px;
+.location-text-div {
+
 }
 
-.location-text-div {
+.location-div {
+  margin-top: 190px;
 }
 
 .address {
@@ -434,6 +444,12 @@ footer img {
 }
 
 
+.donuts-list-specialties-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 .donuts-list-wrapper li {
   list-style: none;
   text-decoration: none;
@@ -458,7 +474,7 @@ ul {
 
 .donut-section-image {
   margin: 0 auto;
-  background-image: url("./Images/desktopdonuts-peter-pan-donuts.png");
+  background-image: url("./Images/donut-section-image.png");
   background-position: 40%;
   background-position: 90%;
   height: 80vh;
@@ -487,16 +503,6 @@ nav a {
   color: #fff;
   margin: 0 1em;
   text-decoration: none;
-}
-
-.App {
-  background-color: #eaeaea;
-  display: block;
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  text-align: center;
-  width: 100vw;
 }
 
 section {
