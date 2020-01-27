@@ -1,9 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:700,400|Raleway:700");
+
 .App {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 100vw;
   background-color: #ffecec;
+}
+
+.fixed-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  background-color: #a8426e;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  min-height: 60px;
+  color: #f1f1f1;  
+}
+
+.fixed-header p {
+  margin: 10px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 15px;
+  min-height: 30px;
+  align-items: center;
+  background-color: #5abdac;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-family: Arial;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal; 
+  color: #355142;
+  margin: 10px;
 }
 
 .hours-location-image {
@@ -16,18 +67,12 @@
   opacity: 0.48;
 }
 
-
 .location-text {
   margin: 10vh auto 50vh auto;
   width: auto;
   height: 0;
   font-family: "Work Sans";
   font-size: 30px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
   color: #24522a;
 }
 
@@ -51,6 +96,7 @@
   text-align: center;
   color: #ecf5ed;
 }
+
 .bold {
   font-weight: bold;
 }
@@ -89,6 +135,59 @@
   object-fit: contain;
 }
 
+.contact {
+  margin: 0 auto;
+  width: 100vw;
+  height: 1008px;
+  border: solid 1px #979797;
+  background-color: #d16e99;
+}
+
+.contact-header {
+  margin: 0 auto;
+  width: 100vw;
+  height: 121px;
+  font-family: "Work Sans";
+  font-size: 80px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 13px;
+  text-align: center;
+  color: white;
+}
+
+.for-all-ques {
+  margin: 0 auto;
+  width: 784px;
+  height: 105px;
+  font-family: "Work Sans";
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3e3a2d;
+}
+
+.we-love {
+  margin: 0 auto;
+  width: 735px;
+  height: 70px;
+  font-family: "Work Sans";
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3e3a2d;
+}
+
 .section-header {
   margin: 0 auto;
   width: 100vw;
@@ -104,3 +203,144 @@
   color: white;
   opacity: 100%;
 }
+
+.we-love .text-style-1 {
+  color: white;
+ }
+
+.designed-by {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #132315;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #24522a;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-weight: bold;
+  align-items: center;
+  min-height: 84px;
+  font-size: 15px;
+  font-family: 'Work Sans', sans-serif;
+  border: solid 1px #979797;
+  background-color: #5abdac;
+  justify-content: space-between;
+}
+
+.footer-icons, .footer-text, .footer-phone {
+  margin: 0 20px; 
+}
+
+.donuts {
+  margin: 0 auto;
+  text-align: center;
+  width: 100vw;
+  height: 5581px;
+  background-color: #ffecec;
+}
+
+.baked-fresh {
+  margin: 0 auto;
+  width: 695px;
+  height: 84px;
+  font-family: "Work Sans";
+  font-size: 35px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #24522a;
+}
+
+.price {
+  margin: 0 auto;
+  width: 284px;
+  height: 103px;
+  font-family: "Work Sans";
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #24522a;
+}
+
+.items {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  width: 284px;
+  height: 103px;
+  color: #24522a;
+  font-weight: bold;
+}
+
+.title {
+  margin: 0 auto;
+  width: 293px;
+  height: 47px;
+  font-family: "Work Sans";
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #24522a;
+}
+
+.list {
+  margin: 93px auto;
+  width: 405px;
+  height: 190px;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #24522a;
+}
+
+.image {
+  margin: 0 auto;
+  /* background-image: url("./Images/desktopdonuts-peter-pan-donuts.png"); */
+  background-position: 40%;
+  background-position: 90%;
+  height: 80vh;
+  width: 100vw;
+  opacity: 0.62;
+}
+
+.footer-text a {
+  margin: 0 10px; 
+  text-decoration: none;
+}
+
+footer img {
+  height: 50px;
+}
+
