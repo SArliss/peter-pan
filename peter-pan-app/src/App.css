@@ -231,20 +231,62 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  font-size: 17px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px 20px;
   font-weight: bold;
   align-items: center;
   min-height: 84px;
-  font-size: 15px;
-  font-family: 'Work Sans', sans-serif;
   border: solid 1px #979797;
   background-color: #5abdac;
   justify-content: space-between;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .footer-icons, .footer-text, .footer-phone {
-  margin: 0 20px; 
+  margin: 10px auto;
+  padding: 10px;
+  color: white;
+}
+
+.footer-phone {
+  width: 200px;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: #e9428b;
+  text-align: center;
+  align-self: center;
+}
+
+.footer-icons {
+  padding: 10px 20px;
+  margin: 0 auto; 
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer-icons a {
+  margin: 5px;
+}
+
+.footer-text {
+  padding: 10px 20px;
+  margin: 0 auto; 
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+}
+
+.footer-phone a, .footer-icon a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+footer img {
+  height: 50px;
+  width: 50px;
 }
 
 .donuts {
@@ -335,12 +377,5 @@ footer {
   opacity: 0.62;
 }
 
-.footer-text a {
-  margin: 0 10px; 
-  text-decoration: none;
-}
 
-footer img {
-  height: 50px;
-}
 
