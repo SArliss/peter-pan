@@ -3,7 +3,7 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   width: 100vw;
   background-color: #ffecec;
 }
@@ -70,6 +70,8 @@ button {
 } */
 
 nav {
+  position: sticky;
+  top: -1px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -121,6 +123,13 @@ nav a {
   font-family: "Work Sans";
   font-size: 30px;
   color: #24522a;
+}
+
+.location-div {
+  margin-top: 190px;
+}
+
+.location-text-div {
 }
 
 .address {
@@ -185,15 +194,17 @@ nav a {
 .contact {
   margin: 0 auto;
   width: 100vw;
-  height: 1008px;
   border: solid 1px #979797;
   background-color: #d16e99;
 }
 
 .contact-header {
-  margin: 0 auto;
-  width: 100vw;
-  height: 121px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 20px;
+  justify-content: center;
   font-family: "Work Sans";
   font-size: 80px;
   font-weight: bold;
@@ -206,9 +217,13 @@ nav a {
 }
 
 .for-all-ques {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 20px 40px;
+  justify-content: center;
   margin: 0 auto;
-  width: 784px;
-  height: 105px;
   font-family: "Work Sans";
   font-size: 30px;
   font-weight: bold;
@@ -221,9 +236,13 @@ nav a {
 }
 
 .we-love {
-  margin: 0 auto;
-  width: 735px;
-  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 20px 40px;
+  justify-content: center;
+  /* width: 100vw; */
   font-family: "Work Sans";
   font-size: 30px;
   font-weight: bold;
@@ -344,9 +363,13 @@ footer img {
 }
 
 .baked-fresh {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 40px auto;
+  padding: 20px;
+  justify-content: center;
   margin: 0 auto;
-  width: 695px;
-  height: 84px;
   font-family: "Work Sans";
   font-size: 35px;
   font-weight: bold;
@@ -383,25 +406,12 @@ footer img {
   font-weight: bold;
 }
 
-.title {
-  margin: 0 auto;
-  width: 293px;
-  height: 47px;
-  font-family: "Work Sans";
-  font-size: 40px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #24522a;
-}
 
-.list {
-  margin: 93px auto;
-  width: 405px;
-  height: 190px;
+.donuts-list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 auto;
   font-family: Arial;
   font-size: 30px;
   font-weight: bold;
@@ -411,11 +421,39 @@ footer img {
   letter-spacing: normal;
   text-align: center;
   color: #24522a;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.image {
+
+.donuts-list-wrapper li {
+  list-style: none;
+  text-decoration: none;
   margin: 0 auto;
-  /* background-image: url("./Images/desktopdonuts-peter-pan-donuts.png"); */
+  padding: 10px;
+  font-size: 30px;
+}
+
+ul {
+  margin: 0 auto;
+  list-style: none;
+  text-decoration: none;
+}
+
+.specialty-wrapper h1{
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  color: #24522a;
+}
+
+.donut-section-image {
+  margin: 0 auto;
+  background-image: url("./Images/desktopdonuts-peter-pan-donuts.png");
   background-position: 40%;
   background-position: 90%;
   height: 80vh;
@@ -424,4 +462,42 @@ footer img {
 }
 
 
+
+body {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+nav {
+  display: block;
+  padding: 1em 0;
+  text-align: center;
+  width: 100vw
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+.App {
+  background-color: #eaeaea;
+  display: block;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  text-align: center;
+  width: 100vw;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
 
