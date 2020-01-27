@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
+import Donuts from './components/Donuts.js';
+import Contact from './components/Contact.js';
+
 
 // Custom components
 import Header from './Components/Header'
@@ -14,9 +17,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        < Header />
-        < Footer />
 
+        <Header />
+        <Donuts/>
+        <Contact/>
+        <Footer />
 
       </div>
     );
