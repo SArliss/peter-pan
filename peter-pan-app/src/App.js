@@ -3,6 +3,8 @@ import "./App.css";
 
 // Custom components
 import Header from './Components/Header'
+import Footer from './Components/Footer'
+
 
 class App extends Component {
   constructor() {
@@ -13,6 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         < Header />
+        < Footer />
 
 
       </div>
