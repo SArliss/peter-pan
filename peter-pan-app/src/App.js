@@ -1,15 +1,23 @@
 import React, { Component } from "react";
 import "./App.css";
 
+// Custom components
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+
+
 class App extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
   }
 
   render() {
     return (
       <div className="App">
-        <h1>Peter Pan</h1>
+        < Header />
+        < Footer />
+
+
       </div>
     );
   }
