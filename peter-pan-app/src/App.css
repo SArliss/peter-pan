@@ -1,38 +1,162 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:700,400|Raleway:700");
+
+.contact {
+  margin: 0 auto;
+  width: 100vw;
+  height: 1008px;
+  border: solid 1px #979797;
+  background-color: #d16e99;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.contact-header {
+  margin: 0 auto;
+  width: 100vw;
+  height: 121px;
+  font-family: "Work Sans";
+  font-size: 80px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 13px;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.for-all-ques {
+  margin: 0 auto;
+  width: 784px;
+  height: 105px;
+  font-family: "Work Sans";
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3e3a2d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.we-love {
+  margin: 0 auto;
+  width: 735px;
+  height: 70px;
+  font-family: "Work Sans";
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3e3a2d;
+}
+
+.we-love .text-style-1 {
+  color: white;
+}
+
+.donuts {
+  margin: 0 auto;
+  text-align: center;
+  width: 100vw;
+  height: 5581px;
+  background-color: #ffecec;
+}
+
+.section-header {
+  margin: 0 auto;
+  width: 100vw;
+  height: 106px;
+  font-family: "Work Sans";
+  font-size: 90px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.baked-fresh {
+  margin: 0 auto;
+  width: 695px;
+  height: 84px;
+  font-family: "Work Sans";
+  font-size: 35px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #24522a;
+}
+
+.price {
+  margin: 0 auto;
+  width: 284px;
+  height: 103px;
+  font-family: "Work Sans";
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #24522a;
+}
+
+.items {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  width: 284px;
+  height: 103px;
+  color: #24522a;
+  font-weight: bold;
+}
+
+.title {
+  margin: 0 auto;
+  width: 293px;
+  height: 47px;
+  font-family: "Work Sans";
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #24522a;
+}
+
+.list {
+  margin: 93px auto;
+  width: 405px;
+  height: 190px;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #24522a;
+}
+
+.image {
+  margin: 0 auto;
+  /* background-image: url("./Images/desktopdonuts-peter-pan-donuts.png"); */
+  background-position: 40%;
+  background-position: 90%;
+  height: 80vh;
+  width: 100vw;
+  opacity: 0.62;
 }
