@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../Images/desktopcarousel2-group-1.png'
+import logo from '../Images/peter-pan-logo-white.png'
 
 function Story() {
   return (

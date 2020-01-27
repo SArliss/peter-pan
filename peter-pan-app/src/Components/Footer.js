@@ -1,8 +1,8 @@
 import React from "react";
-import facebook from "../Images/desktopcarousel2-copy-facebook@2x.png";
-import instagram from "../Images/desktopourstory-instagram@2x.png";
-import yelp from "../Images/desktopcarousel2-yelp@2x.png";
-import maps from "../Images/desktopdonuts-map@2x.png";
+import facebook from "../Images/facebook-logo.png";
+import instagram from "../Images/instagram-logo.png";
+import yelp from "../Images/yelp-logo.png";
+import maps from "../Images/map-logo.png";
 
 
 
