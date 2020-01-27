@@ -66,6 +66,7 @@ function Header() {
           <div key={index} style={{ position: "relative" }}>
             <img
               className="carousel-images tns-lazy-img"
+              id={`carousel-image${index}`}
               src={loadingImage}
               data-src={el}
               alt=""
