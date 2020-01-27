@@ -42,7 +42,7 @@ function Footer() {
       </footer>
 
       <div className="designed-by">
-        <p>DESIGNED BY POMS UX / POWERED BY SEI CHEETAHS</p>
+        <p> POWERED BY POMS UX & SEI CHEETAHS</p>
       </div>
 
     </div>
