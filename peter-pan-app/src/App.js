@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import "./App.css";
+import Donuts from './components/Donuts.js';
+import Contact from './components/Contact.js';
+
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (
       <div className="App">
-        <h1>Peter Pan</h1>
+        <Donuts/>
+        <Contact/>
       </div>
     );
   }
