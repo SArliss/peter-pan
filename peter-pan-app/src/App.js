@@ -9,7 +9,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Peter Pan</h1>
+        < Header
+          // < Carrousel />
+        />
+        < Location />
+        < Story />
+        < Donuts />
+        < Contact />
+        < Footer />
+
       </div>
     );
   }
