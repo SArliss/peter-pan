@@ -61,12 +61,12 @@ function Header() {
       <div className="peter-pan-logo-green-container">
         <img src={logo} className="peter-pan-logo-green" />
       </div>
-      <TinySlider settings={settings} className="carousel">
+      <TinySlider settings={settings} className="header-carousel">
         {imgs.map((el, index) => (
           <div key={index} style={{ position: "relative" }}>
             <img
-              className="carousel-images tns-lazy-img"
-              id={`carousel-image${index}`}
+              className="header-carousel-images tns-lazy-img"
+              id={`header-carousel-image${index}`}
               src={loadingImage}
               data-src={el}
               alt=""
