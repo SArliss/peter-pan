@@ -7,10 +7,11 @@
   width: 100vw;
   height: 100vh;
   background-color: #ffecec;
-
   overflow-y: scroll;
   scroll-behavior: smooth;
   text-align: center;
+  z-index: -1;
+
 }
 
 body {
@@ -72,11 +73,12 @@ section {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #f1f1f1;  
+  color: #f1f1f1;
   padding: 10px;
 }
 
-.fixed-header p, .fixed-header a{
+.fixed-header p,
+.fixed-header a {
   margin: 10px;
   text-decoration: none;
   font-size: 18px;
@@ -120,9 +122,15 @@ button {
   width: 5vw;
 } */
 
-nav {
+.fixed-wrapper {
+  overflow: scroll;
+  z-index: 10;
   position: sticky;
   top: -1px;
+  width: 100%;
+}
+
+nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -130,7 +138,6 @@ nav {
   align-items: center;
   margin: 0 auto;
   padding: 1em 0;
-  min-height: 30px;
   background-color: #5abdac;
   line-height: normal;
   letter-spacing: normal;
@@ -143,9 +150,11 @@ nav a {
   text-decoration: none;
   font-size: 18px;
   font-weight: 800;
-  font-stretch: normal;
-  font-style: normal; 
-  color: #fff;
+  color: #ffffff;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 .header-tagline {
@@ -177,6 +186,7 @@ nav a {
   margin: 4vw;
 }
 
+
 .address-wrapper {
   display: flex;
   flex-direction: column;
@@ -188,6 +198,31 @@ nav a {
 
 .address-wrapper > p {
   margin-bottom: .5vw;
+}
+
+.address a {
+  text-decoration: none;
+  color: #24522a;
+}
+
+.address a:visited {
+  text-decoration: none;
+  color: #24522a;
+}
+
+.story-text {
+  margin: 5vh auto;
+  width: 55vw;
+  height: 50vh;
+  font-family: "Work Sans";
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ecf5ed;
 }
 
 .hours-wrapper {
@@ -431,7 +466,7 @@ ul {
 
 .we-love .text-style-1 {
   color: white;
- }
+}
 
 .designed-by {
   display: flex;
@@ -441,7 +476,7 @@ ul {
   align-items: center;
   justify-content: center;
   background-color: #132315;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
@@ -467,13 +502,20 @@ footer {
   border: solid 1px #979797;
   background-color: #5abdac;
   justify-content: space-between;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
-.footer-icons, .footer-text, .footer-phone {
+.footer-icons,
+.footer-text,
+.footer-phone {
   margin: 10px auto;
   padding: 10px;
   color: white;
+}
+
+.footer-icons img:hover {
+  width: 60px;
+  height: 60px;
 }
 
 .footer-phone {
@@ -487,7 +529,7 @@ footer {
 
 .footer-icons {
   padding: 10px 20px;
-  margin: 0 auto; 
+  margin: 0 auto;
   text-decoration: none;
   text-align: center;
 }
@@ -498,20 +540,36 @@ footer {
 
 .footer-text {
   padding: 10px 20px;
-  margin: 0 auto; 
+  margin: 0 auto;
   text-decoration: none;
   font-size: 17px;
   text-align: center;
 }
 
-.footer-phone a, .footer-icon a {
+.footer-phone a,
+.footer-icon a {
   color: white;
   text-decoration: none;
   font-size: 17px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 footer img {
   height: 50px;
   width: 50px;
+}
+
+.hamburger-wrapper {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .hamburger-wrapper {
+    display: initial;
+    display: flex;
+    align-items: stretch;
+  }
+  .fixed-wrapper {
+    display: none;
+  }
 }

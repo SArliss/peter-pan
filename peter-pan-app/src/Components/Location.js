@@ -10,7 +10,7 @@ function Location() {
         <section className="address-wrapper">
           <p>727 MANHATTAN AVE</p>
           <p>BROOKLYN, NEW YORK 11222</p>
-          <p>(718) 389-3676</p>
+          <a href="tel:1-718-389-3676">(718) 389-3676</a>
         </section>
         <section className="hours-wrapper">
           <p><span className="bold">MON - FRI</span> 4:30AM - 8:00PM</p>

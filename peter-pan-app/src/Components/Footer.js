@@ -4,8 +4,6 @@ import instagram from "../Images/instagram-logo.png";
 import yelp from "../Images/yelp-logo.png";
 import maps from "../Images/map-logo.png";
 
-
-
 function Footer() {
   return (
     <div>
@@ -42,7 +40,7 @@ function Footer() {
       </footer>
 
       <div className="designed-by">
-        <p>DESIGNED BY POMS UX / POWERED BY SEI CHEETAHS</p>
+        <p> POWERED BY POMS UX & SEI CHEETAHS</p>
       </div>
 
     </div>

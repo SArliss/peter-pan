@@ -1,15 +1,13 @@
 import React from "react";
-import logo from '../Images/peter-pan-logo-green.png'
-import carouselImage1 from '../Images/carousel-image-1.png'
-import carouselImage2 from '../Images/carousel-image-2.png'
-import carouselImage3 from '../Images/carousel-image-3.png'
-import carouselImage4 from '../Images/carousel-image-4.png'
-import carouselImage5 from '../Images/carousel-image-5.png'
+import logo from "../Images/peter-pan-logo-green.png";
+import carouselImage1 from "../Images/carousel-image-1.png";
+import carouselImage2 from "../Images/carousel-image-2.png";
+import carouselImage3 from "../Images/carousel-image-3.png";
+import carouselImage4 from "../Images/carousel-image-4.png";
+import carouselImage5 from "../Images/carousel-image-5.png";
 import TinySlider from "tiny-slider-react";
 
-
 function Header() {
-
   const settings = {
     lazyload: true,
     controls: false,
@@ -25,11 +23,10 @@ function Header() {
     gutter: 5,
     responsive: {
       420: {
-        items: 1,
+        items: 1
       }
     }
-  }
-
+  };
 
   const imgs = [
     carouselImage1,
@@ -43,21 +40,8 @@ function Header() {
     "data:image/gif;base64,\
   R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==";
 
-
   return (
     <div>
-      <div className="fixed-header" id="fixed-header">
-        <a href="tel:1-718-389-3676">(718) 389-3676</a>
-        <p>Today’s Hours: 4:30 AM TO 8:00PM</p>
-        <p>727 MANHATTAN AVE  BROOKLYN NY 11222</p>
-      </div>
-
-      <nav>
-        <a href="/#location">HOURS & LOCATION</a>
-        <a href="/#story">OUR STORY</a>
-        <a href="/#donuts">DONUTS</a>
-        <a href="/#contact">CONTACT US</a>
-      </nav>
       <div className="peter-pan-logo-green-container">
         <img src={logo} className="peter-pan-logo-green" />
       </div>
@@ -74,9 +58,11 @@ function Header() {
           </div>
         ))}
       </TinySlider>
-      <p className="header-tagline">Serving Greenpoint Fresh Donuts Everyday Since 1955.</p>
-    </div >
-  )
+      <p className="header-tagline">
+        Serving Greenpoint Fresh Donuts Everyday Since 1955.
+      </p>
+    </div>
+  );
 }
 
 export default Header;
