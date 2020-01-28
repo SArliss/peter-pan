@@ -24,7 +24,7 @@ class App extends Component {
           <div className="fixed-header" id="fixed-header">
             <a href="tel:1-718-389-3676">(718) 389-3676</a>
             <p>Today’s Hours: 4:30 AM TO 8:00PM</p>
-            <p>727 MANHATTAN AVE BROOKLYN NY 11222</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Peter+Pan+Donut+%26+Pastry%26nbsp%3BShop&query_place_id=ChIJfR8jHkRZwokRgllkzTBqhlM"><p>727 MANHATTAN AVE BROOKLYN NY 11222</p></a>
           </div>
 
           <nav>
