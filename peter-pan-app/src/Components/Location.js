@@ -8,8 +8,10 @@ function Location() {
       </div>
       <div className="hours-location-inner-wrapper">
         <section className="address-wrapper">
-          <p>727 MANHATTAN AVE</p>
-          <p>BROOKLYN, NEW YORK 11222</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Peter+Pan+Donut+%26+Pastry%26nbsp%3BShop&query_place_id=ChIJfR8jHkRZwokRgllkzTBqhlM">
+            <p>727 MANHATTAN AVE</p>
+            <p>BROOKLYN, NEW YORK 11222</p>
+          </a>
           <a href="tel:1-718-389-3676">(718) 389-3676</a>
         </section>
         <section className="hours-wrapper">

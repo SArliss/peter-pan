@@ -6,18 +6,20 @@ const Donuts = () => {
       <div className="donuts-header-bg-image">
         <h1 className="section-header">DONUTS</h1>
       </div>
-      <h2 className="baked-fresh">Baked Fresh Daily - <span className="underline">Order Ahead Today!</span></h2>
-      <p className="items">
-        All Donuts <span className="price">$1.25</span> <br></br> 6{" "}
-        <span className="price">$7.50</span>
-        <br></br> 12 <span className="price">$13.99</span>{" "}
+      <h2 className="donuts-order-ahead">Baked Fresh Daily - <a href="tel:1-718-389-3676">Order Ahead</a> Today!</h2>
+      <p className="donut-price-list">
+        All Donuts
+        <span className="donut-price">$1.25</span>
+        <br></br> 6{" "}
+        <span className="donut-price">$7.50</span>
+        <br></br> 12
+        <span className="donut-price">$13.99</span>{" "}
       </p>
       <div className="donuts-list-wrapper">
         <div className="donut-list">
           <h1>BEST SELLERS</h1>
           <ul>
-            <li>Old Fashioned</li>
-            <li>Glazed</li>
+            <li>Old Fashioned Glazed</li>
             <li>Red Velvet</li>
             <li>Blueberry</li>
             <li>Buttermilk</li>

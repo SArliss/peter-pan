@@ -6,6 +6,7 @@
   /* justify-content: space-evenly; */
   width: 100vw;
   height: 100vh;
+  font-family: "Work Sans";
   background-color: #ffecec;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -39,7 +40,6 @@ section {
   margin: 0 auto;
   width: 100vw;
   height: 18vw;
-  font-family: "Work Sans";
   font-size: 80px;
   font-weight: bold;
   letter-spacing: 13px;
@@ -65,7 +65,7 @@ section {
   align-items: center;
   margin: 0 auto;
   background-color: #a8426e;
-  font-family: Arial;
+  font-family: "Work Sans";
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -86,7 +86,7 @@ section {
 }
 
 .peter-pan-logo-green-container {
-  margin: 1vh;
+  margin: 1vh auto 2vh auto;
   display: flex;
   justify-content: center;
 }
@@ -142,7 +142,7 @@ nav {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  font-family: Arial;
+  font-family: "Work Sans";
   width: 100vw
 }
 
@@ -192,18 +192,14 @@ nav a:hover {
   flex-direction: column;
   font-weight: bold;
   text-decoration: underline;
-  line-height: 0vh;
+  line-height: .75vw;
   margin-bottom: 4vw;
 }
 
-.address-wrapper > p {
-  margin-bottom: .5vw;
-}
-
-.address a {
-  text-decoration: none;
+.address-wrapper > a {
   color: #24522a;
 }
+
 
 .address a:visited {
   text-decoration: none;
@@ -236,12 +232,6 @@ nav a:hover {
 }
 
 /* STORY SECTION STYLING */
-.story-section-wrapper {
-  margin: 0 auto;
-  width: 100vw;
-  border: solid 1px #979797;
-  background-color: #d16e99;
-}
 
 .story-header-bg-image {
   display: flex;
@@ -270,19 +260,20 @@ nav a:hover {
   object-fit: contain;
 }
 
+.story-text-wrapper {
+  width: 100vw;
+  background-color: #d16e99;
+}
+
 .story-text {
   margin: 0vh auto;
   width: 55vw;
   height: 50vh;
   font-family: "Work Sans";
   font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: #ecf5ed;
+  
 }
 
 /* DONUT SECTION STYLING */
@@ -292,99 +283,6 @@ nav a:hover {
   width: 100vw;
   background-color: #ffecec;
 }
-
-.baked-fresh {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 40px auto;
-  padding: 20px;
-  justify-content: center;
-  margin: 0 auto;
-  font-family: "Work Sans";
-  font-size: 35px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #24522a;
-}
-
-.price {
-  margin: 0 auto;
-  width: 284px;
-  height: 103px;
-  font-family: "Work Sans";
-  font-size: 30px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #24522a;
-}
-
-.items {
-  margin: 0 auto;
-  text-align: center;
-  font-size: 30px;
-  width: 284px;
-  height: 103px;
-  color: #24522a;
-  font-weight: bold;
-}
-
-
-.donuts-list-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 0 auto;
-  font-family: Arial;
-  font-size: 30px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #24522a;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.donuts-list-wrapper li {
-  list-style-type: none;
-  padding: 0px;
-  font-size: 30px;
-}
-
-ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-.specialty-wrapper h1{
-  font-size: 40px;
-  font-weight: bold;
-  margin: 0 auto;
-  text-align: center;
-  color: #24522a;
-}
-
-.donuts-list-specialties-wrapper {
-  font-size: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
 
 .donuts-header-bg-image {
   display: flex;
@@ -398,6 +296,78 @@ ul {
   width: 100vw;
   opacity: 0.62;
 }
+
+.donuts-order-ahead {
+  padding: 2vw;
+  margin: 0 auto;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  color: #24522a;
+}
+
+.donuts-order-ahead > a {
+  color: #24522a;
+}
+
+.donut-price-list {
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  width: 284px;
+  height: 103px;
+  color: #24522a;
+  font-weight: bold;
+}
+
+.donut-price {
+  margin: 5vw auto;
+  width: 284px;
+  height: 103px;
+  font-size: 30px;
+  text-align: center;
+  color: #24522a;
+}
+
+.donuts-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #24522a;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.donuts-list-wrapper > h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.donuts-list-wrapper li {
+  list-style-type: none;
+  font-size: 30px;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.donuts-list-specialties-wrapper {
+  font-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
 
 
 /* CONTACT SECTION STYLING */
@@ -415,7 +385,6 @@ ul {
   margin: 20px auto;
   padding: 20px;
   justify-content: center;
-  font-family: "Work Sans";
   font-size: 80px;
   font-weight: bold;
   font-stretch: normal;
@@ -434,7 +403,6 @@ ul {
   padding: 20px 40px;
   justify-content: center;
   margin: 0 auto;
-  font-family: "Work Sans";
   font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
@@ -452,8 +420,6 @@ ul {
   margin: 20px auto;
   padding: 20px 40px;
   justify-content: center;
-  /* width: 100vw; */
-  font-family: "Work Sans";
   font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
@@ -476,7 +442,6 @@ ul {
   align-items: center;
   justify-content: center;
   background-color: #132315;
-  font-family: "Work Sans", sans-serif;
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
@@ -502,7 +467,6 @@ footer {
   border: solid 1px #979797;
   background-color: #5abdac;
   justify-content: space-between;
-  font-family: "Work Sans", sans-serif;
 }
 
 .footer-icons,
@@ -551,7 +515,6 @@ footer {
   color: white;
   text-decoration: none;
   font-size: 17px;
-  font-family: "Work Sans", sans-serif;
 }
 
 footer img {
