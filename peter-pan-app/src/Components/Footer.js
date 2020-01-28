@@ -4,8 +4,6 @@ import instagram from "../Images/instagram-logo.png";
 import yelp from "../Images/yelp-logo.png";
 import maps from "../Images/map-logo.png";
 
-
-
 function Footer() {
   return (
     <div>

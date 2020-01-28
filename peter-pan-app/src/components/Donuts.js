@@ -2,11 +2,11 @@ import React from "react";
 
 const Donuts = () => {
   return (
-    <div className="donuts" id="donuts">
-      <div className="image">
+    <div className="donuts-wrapper" id="donuts">
+      <div className="donuts-header-bg-image">
         <h1 className="section-header">DONUTS</h1>
       </div>
-      <h2 className="baked-fresh">Baked Fresh Daily - Order Ahead Today!</h2>
+      <h2 className="baked-fresh">Baked Fresh Daily - <span className="underline">Order Ahead Today!</span></h2>
       <p className="items">
         All Donuts <span className="price">$1.25</span> <br></br> 6{" "}
         <span className="price">$7.50</span>
@@ -48,27 +48,27 @@ const Donuts = () => {
                 <li>Pistachio</li>
                 <li>Banana Nut</li>
               </ul>
-          </div>
-          <div>
-            <ul>
-              <li>Black and White</li>
-              <li>Linzer Tart</li>
-              <li>Bavarian Cream</li>
-              <li>Chocolate Coconut</li>
-              <li>Espresso Cake</li>
-              <li>Baked Apple Turnover</li>
-              <li>Red Velvet</li>
-              <li>Chocolate Cake </li>
-              <li>Red Marble Cruller</li>
-              <li>Blueberry Buttermilk </li>
-              <li>S’mores</li>
-              <li>Apple Crumb</li>
-              <li>Plain Jelly</li>
-              <li>Lemon</li>
-              <li>Strawberry</li>
-              <li>Carrot</li>
-            </ul>
-          </div>
+            </div>
+            <div>
+              <ul>
+                <li>Black and White</li>
+                <li>Linzer Tart</li>
+                <li>Bavarian Cream</li>
+                <li>Chocolate Coconut</li>
+                <li>Espresso Cake</li>
+                <li>Baked Apple Turnover</li>
+                <li>Red Velvet</li>
+                <li>Chocolate Cake </li>
+                <li>Red Marble Cruller</li>
+                <li>Blueberry Buttermilk </li>
+                <li>S’mores</li>
+                <li>Apple Crumb</li>
+                <li>Plain Jelly</li>
+                <li>Lemon</li>
+                <li>Strawberry</li>
+                <li>Carrot</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
