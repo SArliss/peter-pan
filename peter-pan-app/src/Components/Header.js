@@ -37,13 +37,12 @@ function Header() {
   ];
 
   const loadingImage =
-    "data:image/gif;base64,\
-  R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==";
+    "data:image/gif;base64, R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==";
 
   return (
     <div>
       <div className="peter-pan-logo-green-container">
-        <img src={logo} className="peter-pan-logo-green" />
+        <img src={logo} className="peter-pan-logo-green" alt="peter-pan-logo"/>
       </div>
       <TinySlider settings={settings} className="header-carousel">
         {imgs.map((el, index) => (
@@ -53,7 +52,7 @@ function Header() {
               id={`header-carousel-image${index}`}
               src={loadingImage}
               data-src={el}
-              alt=""
+              alt="carrousel-images"
             />
           </div>
         ))}

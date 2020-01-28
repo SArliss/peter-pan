@@ -10,7 +10,7 @@ function Story() {
         </div>
       </div>
       <div className="story-section-logo ">
-        <img src={logo} />
+        <img src={logo} alt="peter-pan-logo"/>
       </div>
       <div className="story-text-wrapper">
         <section className="story-text">
