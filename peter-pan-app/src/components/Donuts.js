@@ -8,15 +8,15 @@ const Donuts = () => {
       </div>
       <h2 className="donuts-order-ahead">Baked Fresh Daily - <a href="tel:1-718-389-3676">Order Ahead</a> Today!</h2>
       <p className="donut-price-list">
-        All Donuts
-        <span className="donut-price">$1.25</span>
+        All Donuts{" "}
+        <span className="donut-price"> $1.25</span>
         <br></br> 6{" "}
         <span className="donut-price">$7.50</span>
-        <br></br> 12
+        <br></br> 12{" "}
         <span className="donut-price">$13.99</span>{" "}
       </p>
       <div className="donuts-list-wrapper">
-        <div className="donut-list">
+        <div className="bestselling-donuts-list">
           <h1>BEST SELLERS</h1>
           <ul>
             <li>Old Fashioned Glazed</li>
@@ -27,10 +27,10 @@ const Donuts = () => {
             <li>Toasted Coconut</li>
           </ul>
         </div>
-        <div className="specialty-list">
+        <div className="specialties-donuts-list-wrapper">
           <h1>SPECIALTIES</h1>
-          <div className="donuts-list-specialties-wrapper">
-            <div>
+          <div className="specialties-donuts-list-inner-wrapper">
+            <div className="specialties-donuts-list-section-one">
               <ul>
                 <li>Sugar Raisin</li>
                 <li>White Cream Coconut</li>
@@ -51,7 +51,7 @@ const Donuts = () => {
                 <li>Banana Nut</li>
               </ul>
             </div>
-            <div>
+            <div className="specialties-donuts-list-section-two">
               <ul>
                 <li>Black and White</li>
                 <li>Linzer Tart</li>
