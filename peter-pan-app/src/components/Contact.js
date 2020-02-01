@@ -1,6 +1,7 @@
 import React from "react";
 import banner from "../Images/peterpanbanner.png";
 import donutGif from "../Images/donut-gif.gif";
+import homerGif from "../Images/homer-gif.gif";
 
 const Contact = () => {
   return (
@@ -12,12 +13,12 @@ const Contact = () => {
       </p>
       <p className="we-love">
         We'd love to hear from you! Show us some love on our{" "}
-        <a href="https://www.facebook.com/peterpandonuts/">social media</a>
+        <a href="https://www.facebook.com/peterpandonuts/" target="_blank">social media</a>
       </p>
       <div className="img-wrapper">
-        <img src={donutGif} alt="Donut GIF"/>
-        <img src={banner} alt="peter-pan-banner"/>
         <img src={donutGif} alt="Donut GIF" />
+        <img src={banner} alt="peter-pan-banner" />
+        <img src={homerGif} alt="Donut GIF" />
       </div>
     </div>
   );

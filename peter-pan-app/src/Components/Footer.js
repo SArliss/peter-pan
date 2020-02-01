@@ -11,20 +11,20 @@ function Footer() {
       <footer>
         <div className="footer-icons">
 
-          <a href="https://www.facebook.com/peterpandonuts/">
-            <img src={facebook} alt="facebook"/>
+          <a href="https://www.facebook.com/peterpandonuts/" target="_blank">
+            <img src={facebook} alt="facebook" />
           </a>
 
-          <a href="https://www.instagram.com/peterpandonut">
-            <img src={instagram} alt="instagram"/>
+          <a href="https://www.instagram.com/peterpandonut" target="_blank">
+            <img src={instagram} alt="instagram" />
           </a>
 
-          <a href="https://www.yelp.com/biz/peter-pan-donut-and-pastry-shop-brooklyn-2">
-            <img src={yelp} alt="yelp"/>
+          <a href="https://www.yelp.com/biz/peter-pan-donut-and-pastry-shop-brooklyn-2" target="_blank">
+            <img src={yelp} alt="yelp" />
           </a>
 
-          <a href="https://www.google.com/maps/search/?api=1&query=Peter+Pan+Donut+%26+Pastry%26nbsp%3BShop&query_place_id=ChIJfR8jHkRZwokRgllkzTBqhlM">
-            <img src={maps} alt="google-maps"/>
+          <a href="https://www.google.com/maps/search/?api=1&query=Peter+Pan+Donut+%26+Pastry%26nbsp%3BShop&query_place_id=ChIJfR8jHkRZwokRgllkzTBqhlM" target="_blank">
+            <img src={maps} alt="google-maps" />
           </a>
 
         </div>
