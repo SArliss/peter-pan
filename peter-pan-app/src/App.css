@@ -247,16 +247,15 @@ nav a:hover {
 
 .story-text-wrapper {
   width: 100vw;
-  height: 40vh;
   background-color: #d16e99;
 }
 
 .story-text {
+  padding: 3vh;
   margin: 0vh auto;
   width: 55vw;
-  height: 20vw;
   font-family: "Work Sans";
-  font-size: 1.25vw;
+  font-size: 20px;
   text-align: center;
   color: #ecf5ed;
   
@@ -373,10 +372,10 @@ ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 2vw auto 2vw auto;
+  margin: 4vw auto 2vw auto;
   padding: 0px;
   justify-content: center;
-  font-size: 80px;
+  font-size: 65px;
   font-weight: bold;
   letter-spacing: 13px;
   text-align: center;
@@ -384,7 +383,7 @@ ul {
 }
 
 .for-all-ques {
-  margin: 0vw 25vw;
+  margin: 2vw 25vw;
   font-weight: bold;
   text-align: center;
   color: #3e3a2d;
@@ -532,6 +531,25 @@ footer img {
   margin: 50px auto;
 }
 
+/* @media only screen and (max-width: 1047px) {
+  .story-text-wrapper {
+    width: 100vw;
+    height: 70vh;
+    background-color: #d16e99;
+  }
+  
+  .story-text {
+    padding-top: 0vw;
+    margin: 0vh auto;
+    width: 55vw;
+    font-family: "Work Sans";
+    font-size: 2.25vw;
+    text-align: center;
+    color: #ecf5ed;
+    
+  }
+} */
+
 @media only screen and (max-width: 600px) {
   .hamburger-wrapper {
     display: initial;
@@ -547,14 +565,5 @@ footer img {
   .hamburger-menu-toggle-1:checked ~ .sidebar {
     display: initial;
   }
-}
 
-
-@media only screen and (min-width: 960px) and (max-width: 1300px) {
-  .App {
-    max-width: 60%;
-    margin-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
 }
