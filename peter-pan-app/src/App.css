@@ -33,18 +33,17 @@ section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 20px auto;
-  padding: 20px auto;
   justify-content: center;
   margin: 0 auto;
+  padding: 20px auto;
   width: 100vw;
   height: 10vw;
   font-size: 5em;
   font-weight: bold;
-  letter-spacing: 13px;
+  letter-spacing: 10px;
   text-align: center;
   color: white;
-  opacity: 100%;
+  opacity: 1.0;
 }
 
 .bold {
@@ -68,7 +67,7 @@ section {
   font-weight: bold;
   color: #f1f1f1;
   font-size: 2em;
-  padding: 1em 4em;
+  padding: 0 4em;
   line-height: 0.1em;
   background-color: #a8426e;
 
@@ -77,7 +76,8 @@ section {
 .fixed-header p, .fixed-header a {
   text-decoration: none;
   color: #ffffff; 
-  padding: 0.2em 0.5em;
+  padding: 0.3em 0.5em;
+  margin: 0.5em auto;
 }
 
 nav {
@@ -169,16 +169,17 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(./Images/location-section-image.png);
+  background: linear-gradient(to right, rgba(136, 42, 78, 0.5), rgb(136, 42, 78, 0.5)), url('./Images/location-section-image.png');
+  /* background-image: url(./Images/location-section-image.png); */
   width: 100vw;
   height: 30vw;
-  opacity: 0.48;
+  opacity: 0.6;
 }
 
 .hours-location-inner-wrapper {
   font-family: "Work Sans";
   font-size: 26px;
-  color: #24522a;
+  color: #335f39;
   margin: 3vw;
 }
 
@@ -216,17 +217,22 @@ button {
 
 /* STORY SECTION STYLING */
 
+#location {
+  padding-bottom: 2em;
+}
+
 .story-header-bg-image {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(./Images/story-section-image.png);
+  background: linear-gradient(to right, rgba(136, 42, 78, 0.5), rgb(136, 42, 78, 0.5)), url('./Images/story-section-image.png');
+  /* background-image: url(./Images/story-section-image.png); */
   background-position-y: 40%;
   background-position-x: 90%;
   width: 100vw;
   height: 30vw;
   object-fit: fill;
-  opacity: 0.59;
+  opacity: 0.6;
 }
 
 .story-section-logo {
@@ -272,12 +278,13 @@ button {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  background-image: url("./Images/donut-section-image.png");
+  background: linear-gradient(to right, rgba(136, 42, 78, 0.5), rgb(136, 42, 78, 0.5)), url('./Images/donut-section-image.png');
+  /* background-image: url("./Images/donut-section-image.png"); */
   background-position-y: 65%;
   background-position-x: 100%;
   width: 100vw;
   height: 30vw;
-  opacity: 0.62;
+  opacity: 0.6;
 }
 
 .donuts-order-ahead {
@@ -446,7 +453,7 @@ footer {
 }
 
 .footer-icons img:hover {
-  opacity: 1;
+  opacity: 1.0;
 }
 
 .footer-phone {
@@ -525,7 +532,7 @@ footer img {
   background-color: pink;
   width: 100vw;
   height: 100vh;
-  opacity: .5;
+  opacity: 0.5;
   z-index: 1000;
 }
 
@@ -559,9 +566,7 @@ footer img {
     display: flex;
     align-items: stretch;
   }
-  .fixed-wrapper {
-    display: none;
-  }
+ 
   .hamburger-menu-toggle-1 {
     display: none;
   }
@@ -569,12 +574,34 @@ footer img {
     display: initial;
   }
 
+  .fixed-wrapper {
+    display: none;
+  }
+
   .footer {
     position: relative;
   }
 
   .designed-by{
-    margin-bottom: 7em;
-    padding: 1em 0;
+    margin-bottom: 6em;
+    padding-bottom: 3em;
   }
+
+  .header-carousel-images {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+  }
+
+  .peter-pan-logo-green {
+    width: 60vw;
+  }
+
+  .story-header-bg-image,
+  .hours-location-header-bg-image,
+  .donuts-header-bg-image {
+    width: 100vw;
+    height: 50vw;
+  }
+  
 }
