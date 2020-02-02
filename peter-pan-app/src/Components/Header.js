@@ -41,9 +41,15 @@ function Header() {
 
   return (
     <div>
-      <div className="peter-pan-logo-green-container">
-        <img src={logo} className="peter-pan-logo-green" alt="peter-pan-logo"/>
-      </div>
+      {/* <div className="mobile-header"> */}
+        <div className="peter-pan-logo-green-container">
+          <img
+            src={logo}
+            className="peter-pan-logo-green"
+            alt="peter-pan-logo"
+          />
+        </div>
+      {/* </div> */}
       <TinySlider settings={settings} className="header-carousel">
         {imgs.map((el, index) => (
           <div key={index} style={{ position: "relative" }}>
