@@ -424,7 +424,7 @@ footer {
   justify-content: space-between;
   font-size: 17px;
   margin: 0 auto;
-  padding: 2px 0px;
+  padding: 5px 0px;
   font-weight: bold;
   border: solid 1px #979797;
   background-color: #5abdac;
@@ -439,7 +439,7 @@ footer {
 .footer-icons,
 .footer-text,
 .footer-phone {
-  margin: 10px auto;
+  margin: 5px auto;
   padding: 10px;
   color: white;
 }
@@ -459,6 +459,7 @@ footer {
   background-color: #e9428b;
   text-align: center;
   align-self: center;
+  margin: 0 auto;
 }
 
 .footer-icons {
