@@ -582,6 +582,18 @@ footer img {
     position: relative;
   }
 
+  div.footer-text {
+  line-height: 0.1em;
+  padding-bottom: 1em;
+  margin-bottom: 0.2em auto;
+  }
+
+  div.footer-icons {
+  line-height: 0.1em;
+  padding: 0.2em;
+  margin: 0.2em auto;
+  }
+
   .designed-by{
     margin-bottom: 6em;
     padding-bottom: 3em;
