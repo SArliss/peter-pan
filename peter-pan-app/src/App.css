@@ -605,6 +605,10 @@ footer img {
     width: 50vw;
   }
 
+  .header-tagline {
+    font-size: 20px;
+  }
+
   .story-header-bg-image,
   .hours-location-header-bg-image,
   .donuts-header-bg-image {
