@@ -67,7 +67,7 @@ section {
   font-weight: bold;
   color: #f1f1f1;
   font-size: 2em;
-  padding: 1em 4em;
+  padding: 0 4em;
   line-height: 0.1em;
   background-color: #a8426e;
 
@@ -76,7 +76,8 @@ section {
 .fixed-header p, .fixed-header a {
   text-decoration: none;
   color: #ffffff; 
-  padding: 0.2em 0.5em;
+  padding: 0.3em 0.5em;
+  margin: 0.5em auto;
 }
 
 nav {
