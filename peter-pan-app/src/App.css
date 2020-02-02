@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:700,400|Raleway:700");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600,700|Raleway:700");
 
 .App {
   display: block;
@@ -64,10 +64,10 @@ section {
   text-align: center;
   margin: 0 auto;
   font-family: "Work Sans";
-  font-weight: bold;
+  font-weight: 600;
   color: #f1f1f1;
-  font-size: 2em;
-  padding: 0 4em;
+  font-size: 1.5em;
+  padding: .25em 0em .25em 5em;
   line-height: 0.1em;
   background-color: #a8426e;
 
@@ -92,8 +92,8 @@ nav {
   font-family: "Work Sans";
   font-weight: bold;
   color: #f1f1f1;
-  font-size: 2em;
-  padding: 0.5em 4em;
+  font-size: 1.5em;
+  padding: 0.75em 4em;
   background-color: #5abdac;
 }
 
@@ -132,7 +132,7 @@ nav a:hover {
 
 .header-carousel-images {
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   object-fit: cover;
 }
 
@@ -178,9 +178,9 @@ button {
 
 .hours-location-inner-wrapper {
   font-family: "Work Sans";
-  font-size: 26px;
+  font-size: 22px;
   color: #335f39;
-  margin: 3vw;
+  margin: 1vw auto;
 }
 
 
@@ -196,7 +196,6 @@ button {
 
 .address-wrapper > a {
   color: #24522a;
-  padding: 5px;
 }
 
 .address a:visited {
@@ -230,7 +229,7 @@ button {
   background-position-y: 40%;
   background-position-x: 90%;
   width: 100vw;
-  height: 30vw;
+  height: 25vw;
   object-fit: fill;
   opacity: 0.6;
 }
@@ -255,11 +254,11 @@ button {
 }
 
 .story-text {
-  padding: 3vh;
+  padding: 2vh;
   margin: 0vh auto;
   width: 55vw;
   font-family: "Work Sans";
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   color: #ecf5ed;
   
@@ -283,7 +282,7 @@ button {
   background-position-y: 65%;
   background-position-x: 100%;
   width: 100vw;
-  height: 30vw;
+  height: 25vw;
   opacity: 0.6;
 }
 
@@ -381,7 +380,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 4vw auto 0 auto;
+  margin: 8vw auto 0 auto;
   padding: 0px;
   justify-content: center;
   font-size: 50px;
@@ -393,7 +392,7 @@ h4 {
 
 .for-all-ques, .we-love {
   margin: 0 auto;
-  padding: 1vw 4vw;
+  padding: 0vw 4vw;
   font-weight: bold;
   text-align: center;
   max-width: 70vw;
@@ -409,11 +408,11 @@ h4 {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding: 3vw;
+  padding: 2.5vw;
 }
 
 .img-wrapper img {
-  margin: 2.5vw 5vw;
+  margin: 1vw 5vw;
   margin-bottom: 3vw;
   height: 10vw;
   border-radius: 0.2em;
@@ -426,10 +425,10 @@ footer {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: 17px;
   margin: 0 auto;
-  padding: 4px 0px;
+  padding: 10px 0px;
   font-weight: bold;
   border: solid 1px #979797;
   background-color: #5abdac;
@@ -444,7 +443,6 @@ footer {
 .footer-text,
 .footer-phone {
   margin: 5px auto;
-  padding: 10px;
   color: white;
 }
 
@@ -457,20 +455,19 @@ footer {
 }
 
 .footer-phone {
-  width: 200px;
+  width: 175px;
   border-radius: 30px;
   padding: 15px;
   background-color: #e9428b;
   text-align: center;
   align-self: center;
-  margin: 0 auto;
+  margin: 0 4vw;
 }
 
 .footer-icons {
-  padding: 10px 20px;
-  margin: 0 auto;
+  padding: 0px auto;
+  margin: 0 4vw;
   text-decoration: none;
-  text-align: center;
 }
 
 .footer-icons a {
@@ -478,23 +475,22 @@ footer {
 }
 
 .footer-text {
-  padding: 10px 20px;
+  padding: 5px 5px;
   margin: 0 auto;
   text-decoration: none;
-  font-size: 17px;
-  text-align: center;
+  font-size: 15px;
 }
 
 .footer-phone a,
 .footer-icon a {
   color: white;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 footer img {
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
 }
 
 .designed-by {
