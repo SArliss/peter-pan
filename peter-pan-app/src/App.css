@@ -68,7 +68,7 @@ section {
   font-weight: bold;
   color: #f1f1f1;
   font-size: 2em;
-  padding: 1em 3em;
+  padding: 1em 4em;
   line-height: 0.1em;
   background-color: #a8426e;
 
@@ -93,7 +93,7 @@ nav {
   font-weight: bold;
   color: #f1f1f1;
   font-size: 2em;
-  padding: 0.5em 3em;
+  padding: 0.5em 4em;
   background-color: #5abdac;
 }
 
@@ -171,7 +171,7 @@ button {
   justify-content: center;
   background-image: url(./Images/location-section-image.png);
   width: 100vw;
-  height: 40vw;
+  height: 30vw;
   opacity: 0.48;
 }
 
@@ -224,7 +224,7 @@ button {
   background-position-y: 40%;
   background-position-x: 90%;
   width: 100vw;
-  height: 40vw;
+  height: 30vw;
   object-fit: fill;
   opacity: 0.59;
 }
@@ -276,7 +276,7 @@ button {
   background-position-y: 65%;
   background-position-x: 100%;
   width: 100vw;
-  height: 40vw;
+  height: 30vw;
   opacity: 0.62;
 }
 
@@ -422,7 +422,7 @@ footer {
   justify-content: space-between;
   font-size: 17px;
   margin: 0 auto;
-  padding: 5px 0px;
+  padding: 4px 0px;
   font-weight: bold;
   border: solid 1px #979797;
   background-color: #5abdac;
