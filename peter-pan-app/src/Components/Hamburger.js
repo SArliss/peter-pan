@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import logo from "../Images/iphone-8-hamburgermenu-group.png";
 
 class Hamburger extends Component {
   constructor(props) {
@@ -16,21 +17,29 @@ class Hamburger extends Component {
 
   render() {
     return (
-      <div className="hamburger-wrapper">
+      <div>
+        <button className="hamburger-click" onClick={() => this.toggleMenu()}>
+          <div className="hamburger-icon"></div>
+          <div className="hamburger-icon"></div>
+          <div className="hamburger-icon"></div>
+        </button>
         {this.state.active && (
           <div className="hamburger-sidebar">
             <div className="hamburger-background">
-                <a href="/#location">HOURS & LOCATION</a>
-                <a href="/#story">OUR STORY</a>
-                <a href="/#donuts">DONUTS</a>
-                <a href="/#contact">CONTACT US</a>
+              <a href="/#location">HOURS & LOCATION</a>
+              <a href="/#story">OUR STORY</a>
+              <a href="/#donuts">DONUTS</a>
+              <a href="/#contact">CONTACT US</a>
             </div>
           </div>
         )}
-        <button className="hamburger-click" onClick={() => this.toggleMenu()}>
-          <div id="hamburger-icon"><span></span></div>
-        </button>
-        <div className="hamburger-content"></div>
+        <div className="hamburger-wrapper">
+          <img
+            src={logo}
+            className="peter-pan-logo-white-mobile"
+            alt="peter-pan-logo"
+          />
+        </div>
       </div>
     );
   }
