@@ -13,7 +13,7 @@ function Carousel() {
     controls: false,
     arrowKeys: true,
     speed: 400,
-    autoplayTimeout: 2900,
+    autoplayTimeout: 3900,
     autoplayButtonOutput: false,
     touch: true,
     autoplay: true,
@@ -42,7 +42,7 @@ function Carousel() {
   return (
     <div>
       <div className="peter-pan-logo-green-container">
-        <img src={logo} className="peter-pan-logo-green" alt="peter-pan-logo"/>
+        <img src={logo} className="peter-pan-logo-green" alt="peter-pan-logo" />
       </div>
       <TinySlider settings={settings} className="header-carousel">
         {imgs.map((el, index) => (
