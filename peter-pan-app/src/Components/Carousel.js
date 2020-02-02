@@ -7,7 +7,7 @@ import carouselImage4 from "../Images/carousel-image-4.png";
 import carouselImage5 from "../Images/carousel-image-5.png";
 import TinySlider from "tiny-slider-react";
 
-function Header() {
+function Carousel() {
   const settings = {
     lazyload: true,
     controls: false,
@@ -64,4 +64,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Carousel;

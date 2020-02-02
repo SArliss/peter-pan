@@ -3,7 +3,6 @@
 .App {
   display: block;
   flex-direction: column;
-  /* justify-content: space-evenly; */
   width: 100vw;
   height: 100vh;
   font-family: "Work Sans";
@@ -41,7 +40,7 @@ section {
   margin: 0 auto;
   width: 100vw;
   height: 10vw;
-  font-size: 70px;
+  font-size: 5em;
   font-weight: bold;
   letter-spacing: 13px;
   text-align: center;
@@ -61,29 +60,60 @@ section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: center;
   align-items: center;
-  margin: 0 auto;
-  background-color: #a8426e;
-  font-family: "Work Sans";
-  font-size: 18px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
+  margin: 0 auto;
+  font-family: "Work Sans";
+  font-weight: bold;
   color: #f1f1f1;
-  padding: 10px;
+  font-size: 2em;
+  padding: 0.5em 3em;
+  background-color: #a8426e;
+
 }
 
-.fixed-header p,
-.fixed-header a {
-  margin: 10px;
+.fixed-header p, .fixed-header a {
   text-decoration: none;
-  font-size: 18px;
-  color: white;
+  color: #ffffff; 
+  padding: 0em 0.5em;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Work Sans";
+  font-weight: bold;
+  color: #f1f1f1;
+  font-size: 2em;
+  padding: 0.5em 3em;
+  background-color: #5abdac;
+}
+
+nav a {
+  text-decoration: none;
+  color: #224522;
+  padding: 0.2em 0.5em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.fixed-wrapper {
+  overflow: scroll;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 
 .peter-pan-logo-green-container {
@@ -122,41 +152,6 @@ button {
   margin: 0 10vw 0 30vw;
   width: 5vw;
 } */
-
-.fixed-wrapper {
-  overflow: scroll;
-  z-index: 10;
-  position: sticky;
-  top: -1px;
-  width: 100%;
-}
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 0 auto;
-  padding: 1em 0;
-  background-color: #5abdac;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  font-family: "Work Sans";
-  width: 100vw
-}
-
-nav a {
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 800;
-  color: #ffffff;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
 
 .header-tagline {
   font-family: "Work Sans";
@@ -285,6 +280,7 @@ nav a:hover {
 
 .donuts-order-ahead {
   margin: 1.5vw auto;
+  padding: 0.4em;
   justify-content: center;
   font-size: 30px;
   font-weight: bold;
@@ -339,18 +335,8 @@ ul {
   list-style-type: none;
 }
 
-.bestselling-donuts-list > h1 {
-  font-size: 35px;
-}
-
-
 .specialties-donuts-list-wrapper {
   margin-bottom: 2vw;
-}
-
-.specialties-donuts-list-wrapper > h1 {
-  font-size: 35px;
-  margin: 0;
 }
 
 .specialties-donuts-list-inner-wrapper {
@@ -358,6 +344,16 @@ ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-around;
+}
+
+.specialties-donuts-list-section-one, .specialties-donuts-list-section-two {
+  padding: 0 1em;
+}
+
+h4 {
+  padding: 0;
+  margin: 0 auto;
 }
 
 /* CONTACT SECTION STYLING */
@@ -376,7 +372,7 @@ ul {
   margin: 4vw auto 2vw auto;
   padding: 0px;
   justify-content: center;
-  font-size: 65px;
+  font-size: 50px;
   font-weight: bold;
   letter-spacing: 13px;
   text-align: center;
@@ -428,11 +424,16 @@ footer {
   justify-content: space-between;
   font-size: 17px;
   margin: 0 auto;
-  padding: 20px 0px;
+  padding: 2px 0px;
   font-weight: bold;
-  min-height: 84px;
   border: solid 1px #979797;
   background-color: #5abdac;
+
+  z-index: 10;
+  position: fixed;
+  left: 0;
+   bottom: 0;
+   width: 100%;
 }
 
 .footer-icons,
@@ -444,7 +445,7 @@ footer {
 }
 
 .footer-icons img {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .footer-icons img:hover {
@@ -454,7 +455,7 @@ footer {
 .footer-phone {
   width: 200px;
   border-radius: 30px;
-  padding: 20px;
+  padding: 15px;
   background-color: #e9428b;
   text-align: center;
   align-self: center;
