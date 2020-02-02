@@ -70,10 +70,10 @@ section {
   padding: 0 4em;
   line-height: 0.1em;
   background-color: #a8426e;
-
 }
 
-.fixed-header p, .fixed-header a {
+.fixed-header p,
+.fixed-header a {
   text-decoration: none;
   color: #ffffff; 
   padding: 0.3em 0.5em;
@@ -183,7 +183,6 @@ button {
   margin: 3vw;
 }
 
-
 .address-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -211,7 +210,8 @@ button {
   padding: 1vw;
 }
 
-.hours-wrapper p, .hours-wrapper a{
+.hours-wrapper p,
+.hours-wrapper a {
   margin: 0 auto;
 }
 
@@ -262,7 +262,6 @@ button {
   font-size: 20px;
   text-align: center;
   color: #ecf5ed;
-  
 }
 
 /* DONUT SECTION STYLING */
@@ -333,7 +332,6 @@ button {
   align-items: center;
 }
 
-
 .donuts-list-wrapper li {
   list-style-type: none;
   font-size: 25px;
@@ -356,7 +354,8 @@ ul {
   justify-content: space-around;
 }
 
-.specialties-donuts-list-section-one, .specialties-donuts-list-section-two {
+.specialties-donuts-list-section-one,
+.specialties-donuts-list-section-two {
   padding: 0 1em;
 }
 
@@ -391,7 +390,8 @@ h4 {
   color: white;
 }
 
-.for-all-ques, .we-love {
+.for-all-ques,
+.we-love {
   margin: 0 auto;
   padding: 1vw 4vw;
   font-weight: bold;
@@ -401,7 +401,8 @@ h4 {
   color: #3e3a2d;
 }
 
-.for-all-ques a, .we-love a{
+.for-all-ques a,
+.we-love a {
   color: white;
 }
 
@@ -418,7 +419,6 @@ h4 {
   height: 10vw;
   border-radius: 0.2em;
 }
-
 
 /* FOOTER SECTION STYLING */
 footer {
@@ -516,28 +516,52 @@ footer img {
   display: none;
 }
 
-.hamburger-icon {
-  width: 20px;
-  height: 20px;
-  top: 0;
-  left: 0;
-  background-color: pink;
+.hamburger-click {
   position: fixed;
+  right: 0;
+}
+
+.hamburger-icon {
+  margin-top: 5px;
+  top: 0;
+  right: 0;
+  width: 29px;
+  height: 5px;
+  background-color: white;
 }
 
 .hamburger-background {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: pink;
+  background-color: #5abdac;
   width: 100vw;
   height: 100vh;
-  opacity: 0.5;
   z-index: 1000;
 }
 
 .hamburger-background a {
-  margin: 50px auto;
+  margin: 30px auto;
+  width: 115px;
+  height: 24px;
+  font-family: "Work Sans";
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  text-decoration: none;
+  color: #355142;
+}
+
+.hamburger-background a:hover {
+  color: white;
+}
+
+.peter-pan-logo-green-container-mobile {
+  display: none;
 }
 
 /* @media only screen and (max-width: 1047px) {
@@ -559,19 +583,29 @@ footer img {
   }
 } */
 
-
 @media only screen and (max-width: 600px) {
   .hamburger-wrapper {
+    position: fixed;
+    z-index: 10;
     display: initial;
     display: flex;
     align-items: stretch;
+    width: 375px;
+    height: 91px;
+    background-color: #5abdac;
   }
- 
-  .hamburger-menu-toggle-1 {
+
+  .hamburger-click {
+    z-index: 20;
+  }
+
+  .hamburger-background {
+    height:500px;
+    position: absolute;
+  }
+
+  .fixed-wrapper {
     display: none;
-  }
-  .hamburger-menu-toggle-1:checked ~ .sidebar {
-    display: initial;
   }
 
   .fixed-wrapper {
@@ -582,6 +616,30 @@ footer img {
     position: relative;
   }
 
+  .designed-by {
+    margin-bottom: 7em;
+    padding: 1em 0;
+  }
+
+  .header-carousel-images {
+    top: 10%;
+    height: 375px;
+  }
+  .peter-pan-logo-green-container {
+    display: none;
+  }
+  .peter-pan-logo-white-mobile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 173px;
+    height: 58px;
+    object-fit: contain;
+    z-index: 20;
+    left: 25%;
+    top: 20%;
+  }
   div.footer-text {
   line-height: 0.1em;
   padding-bottom: 1em;
@@ -615,5 +673,4 @@ footer img {
     width: 100vw;
     height: 50vw;
   }
-  
 }
