@@ -8,8 +8,9 @@ const Contact = () => {
     <div className="contact-wrapper" id="contact">
       <h1 className="contact-header">CONTACT US</h1>
       <p className="for-all-ques">
-        For all orders, questions and press inquiries, you can reach us at{" "}
-        <a href="tel:1-718-389-3676">(718) 389-3676</a> between 8AM to 4PM daily
+        <p>For all orders, questions and press inquiries, you can reach us at:</p>
+        <a href="tel:1-718-389-3676">(718) 389-3676</a> 
+        <p>Between 8AM to 4PM daily.</p>
       </p>
       <p className="we-love">
         We'd love to hear from you! Show us some love on our{" "}

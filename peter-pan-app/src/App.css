@@ -68,7 +68,8 @@ section {
   font-weight: bold;
   color: #f1f1f1;
   font-size: 2em;
-  padding: 0 3em;
+  padding: 1em 3em;
+  line-height: 0.1em;
   background-color: #a8426e;
 
 }
@@ -170,7 +171,7 @@ button {
   justify-content: center;
   background-image: url(./Images/location-section-image.png);
   width: 100vw;
-  height: 20vw;
+  height: 40vw;
   opacity: 0.48;
 }
 
@@ -184,17 +185,18 @@ button {
 
 .address-wrapper {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   font-weight: bold;
   text-decoration: underline;
-  line-height: .75vw;
-  margin-bottom: 2vw;
+  margin: 0 auto;
+  max-width: 15em;
 }
 
 .address-wrapper > a {
   color: #24522a;
+  padding: 5px;
 }
-
 
 .address a:visited {
   text-decoration: none;
@@ -203,12 +205,13 @@ button {
 
 .hours-wrapper {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  line-height: 0vh;
+  padding: 1vw;
 }
 
-.hours-wrapper > p {
-  margin-bottom: 2vw;
+.hours-wrapper p, .hours-wrapper a{
+  margin: 0 auto;
 }
 
 /* STORY SECTION STYLING */
@@ -221,7 +224,7 @@ button {
   background-position-y: 40%;
   background-position-x: 90%;
   width: 100vw;
-  height: 20vw;
+  height: 40vw;
   object-fit: fill;
   opacity: 0.59;
 }
@@ -273,7 +276,7 @@ button {
   background-position-y: 65%;
   background-position-x: 100%;
   width: 100vw;
-  height: 20vw;
+  height: 40vw;
   opacity: 0.62;
 }
 
@@ -357,6 +360,9 @@ h4 {
 
 /* CONTACT SECTION STYLING */
 .contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   margin: 0 auto;
   font-size: 26px;
   width: 100vw;
@@ -368,7 +374,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 4vw auto 2vw auto;
+  margin: 4vw auto 0 auto;
   padding: 0px;
   justify-content: center;
   font-size: 50px;
@@ -378,39 +384,32 @@ h4 {
   color: white;
 }
 
-.for-all-ques {
-  margin: 2vw 25vw;
+.for-all-ques, .we-love {
+  margin: 0 auto;
+  padding: 1vw 4vw;
   font-weight: bold;
+  text-align: center;
+  max-width: 70vw;
   text-align: center;
   color: #3e3a2d;
 }
 
-.for-all-ques > a {
-  color: white;
-}
-
-
-.we-love {
-  margin: 2vw 25vw;
-  font-weight: bold;
-  text-align: center;
-  color: #3e3a2d;
-}
-
-.we-love > a {
+.for-all-ques a, .we-love a{
   color: white;
 }
 
 .img-wrapper {
   display: flex;
   justify-content: center;
-  margin: 0 auto
+  margin: 0 auto;
+  padding: 3vw;
 }
 
-.img-wrapper > img {
+.img-wrapper img {
   margin: 2.5vw 5vw;
   margin-bottom: 3vw;
-  height: 7vw;
+  height: 10vw;
+  border-radius: 0.2em;
 }
 
 
