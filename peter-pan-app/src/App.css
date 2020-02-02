@@ -43,7 +43,7 @@ section {
   letter-spacing: 10px;
   text-align: center;
   color: white;
-  opacity: 100%;
+  opacity: 1.0;
 }
 
 .bold {
@@ -452,7 +452,7 @@ footer {
 }
 
 .footer-icons img:hover {
-  opacity: 1;
+  opacity: 1.0;
 }
 
 .footer-phone {
@@ -531,7 +531,7 @@ footer img {
   background-color: pink;
   width: 100vw;
   height: 100vh;
-  opacity: .5;
+  opacity: 0.5;
   z-index: 1000;
 }
 
