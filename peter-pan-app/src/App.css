@@ -33,15 +33,14 @@ section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 20px auto;
-  padding: 20px auto;
   justify-content: center;
   margin: 0 auto;
+  padding: 20px auto;
   width: 100vw;
   height: 10vw;
   font-size: 5em;
   font-weight: bold;
-  letter-spacing: 13px;
+  letter-spacing: 10px;
   text-align: center;
   color: white;
   opacity: 100%;
@@ -216,6 +215,10 @@ button {
 }
 
 /* STORY SECTION STYLING */
+
+#location {
+  padding-bottom: 2em;
+}
 
 .story-header-bg-image {
   display: flex;
@@ -579,8 +582,25 @@ footer img {
   }
 
   .designed-by{
-    margin-bottom: 7em;
-    padding: 1em 0;
+    margin-bottom: 6em;
+    padding-bottom: 3em;
+  }
+
+  .header-carousel-images {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+  }
+
+  .peter-pan-logo-green {
+    width: 70vw;
+  }
+
+  .story-header-bg-image,
+  .hours-location-header-bg-image,
+  .donuts-header-bg-image {
+    width: 100vw;
+    height: 50vw;
   }
   
 }
