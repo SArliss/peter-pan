@@ -169,16 +169,17 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(./Images/location-section-image.png);
+  background: linear-gradient(to right, rgba(136, 42, 78, 0.5), rgb(136, 42, 78, 0.5)), url('./Images/location-section-image.png');
+  /* background-image: url(./Images/location-section-image.png); */
   width: 100vw;
   height: 30vw;
-  opacity: 0.48;
+  opacity: 0.6;
 }
 
 .hours-location-inner-wrapper {
   font-family: "Work Sans";
   font-size: 26px;
-  color: #24522a;
+  color: #335f39;
   margin: 3vw;
 }
 
@@ -220,13 +221,14 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(./Images/story-section-image.png);
+  background: linear-gradient(to right, rgba(136, 42, 78, 0.5), rgb(136, 42, 78, 0.5)), url('./Images/story-section-image.png');
+  /* background-image: url(./Images/story-section-image.png); */
   background-position-y: 40%;
   background-position-x: 90%;
   width: 100vw;
   height: 30vw;
   object-fit: fill;
-  opacity: 0.59;
+  opacity: 0.6;
 }
 
 .story-section-logo {
@@ -272,12 +274,13 @@ button {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  background-image: url("./Images/donut-section-image.png");
+  background: linear-gradient(to right, rgba(136, 42, 78, 0.5), rgb(136, 42, 78, 0.5)), url('./Images/donut-section-image.png');
+  /* background-image: url("./Images/donut-section-image.png"); */
   background-position-y: 65%;
   background-position-x: 100%;
   width: 100vw;
   height: 30vw;
-  opacity: 0.62;
+  opacity: 0.6;
 }
 
 .donuts-order-ahead {
@@ -559,14 +562,16 @@ footer img {
     display: flex;
     align-items: stretch;
   }
-  .fixed-wrapper {
-    display: none;
-  }
+ 
   .hamburger-menu-toggle-1 {
     display: none;
   }
   .hamburger-menu-toggle-1:checked ~ .sidebar {
     display: initial;
+  }
+
+  .fixed-wrapper {
+    display: none;
   }
 
   .footer {
@@ -577,4 +582,5 @@ footer img {
     margin-bottom: 7em;
     padding: 1em 0;
   }
+  
 }
