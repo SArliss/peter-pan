@@ -7,7 +7,7 @@ import maps from "../Images/map-logo.png";
 function Footer() {
   return (
     <div>
-
+    
       <footer>
         <div className="footer-icons">
 
@@ -38,10 +38,6 @@ function Footer() {
         </div>
 
       </footer>
-
-      <div className="designed-by">
-        <p> POWERED BY POMS UX & SEI CHEETAHS</p>
-      </div>
 
     </div>
   )

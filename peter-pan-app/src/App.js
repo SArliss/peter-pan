@@ -9,7 +9,7 @@ import Contact from "./Components/Contact.js";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header"
 import Hamburger from "./Components/Hamburger";
-
+import Powered from "./Components/Poweredby"
 
 //CSS Component
 import "./App.css";
@@ -17,7 +17,6 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-
       <Header />
       <Hamburger />
       <Carousel />
@@ -26,6 +25,7 @@ function App() {
       <Donuts />
       <Contact />
       <Footer />
+      <Powered />
 
     </div>
   );
