@@ -410,7 +410,7 @@ h4 {
   padding: 0vw 4vw;
   font-weight: bold;
   text-align: center;
-  max-width: 70vw;
+  max-width: 50vw;
   text-align: center;
   color: #3e3a2d;
 }
@@ -567,6 +567,7 @@ footer img {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    cursor: pointer;
   }
   
   .hamburger-icon {
@@ -673,7 +674,7 @@ footer img {
   }
 
   .designed-by {
-    margin-bottom: 6em;
+    margin-bottom: 4em;
     padding-bottom: 3em;
   }
 
@@ -697,7 +698,7 @@ footer img {
   .donuts-header-bg-image {
     top: 10em;
     width: 100vw;
-    height: 50vh;
+    height: 40vh;
   }
 
   #x-button {
@@ -706,6 +707,7 @@ footer img {
     right: 0;
     width: 35px;
     height: 25px;
+    cursor: pointer;
   }
 
   .x-button {
@@ -728,11 +730,30 @@ footer img {
   .contact-header {
     margin-top: 13vh;
   }
+
   .hamburger-close {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     opacity: 0;
   }
+
+
+  .contact-wrapper {
+    padding-bottom: 0.5em;
+  }
+
+  .story-text{
+    width: 70vw;
+  }
+
+  .for-all-ques, .we-love {
+    max-width: 70vw;
+}
+
+.img-wrapper {
+  padding: 2em;
+}
+
 }
 
