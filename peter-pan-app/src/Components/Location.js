@@ -11,7 +11,7 @@ function Location() {
           <a href="https://www.google.com/maps/search/?api=1&query=Peter+Pan+Donut+%26+Pastry%26nbsp%3BShop&query_place_id=ChIJfR8jHkRZwokRgllkzTBqhlM" target="_blank">
             <p>727 MANHATTAN AVE. BROOKLYN, NEW YORK 11222</p>
           </a>
-        <a href="tel:1-718-389-3676">(718) 389-3676</a>
+        <a href="tel:1-718-389-3676">718-389-3676</a>
         <br></br>
         </section>
         <section className="hours-wrapper">
