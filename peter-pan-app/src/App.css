@@ -583,21 +583,21 @@ footer img {
   .hamburger-wrapper {
     position: fixed;
     z-index: 10;
-    display: initial;
     display: flex;
     align-items: stretch;
-    width: 375px;
+    width: 100vw;
     height: 91px;
     background-color: #5abdac;
   }
 
   .hamburger-click {
-    z-index: 20;
+    z-index: 100;
+    position: absolute;
   }
 
   .hamburger-background {
     height:500px;
-    position: absolute;
+    position: fixed;
   }
 
   .fixed-wrapper {
