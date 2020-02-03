@@ -5,41 +5,53 @@ class Hamburger extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: false
+      open: false,
+      closed: false
     };
   }
 
-  toggleMenu = () => {
+  openMenu = () => {
     this.setState({
-      active: !this.state.active
+      open: true
     });
+    console.log("open")
+  };
+
+  closeMenu = () => {
+    this.setState({
+      closed: true
+    });
+    console.log("closed")
   };
 
   render() {
     return (
       <div>
-        <button className="hamburger-click" onClick={() => this.toggleMenu()}>
-          <div className="hamburger-icon"></div>
-          <div className="hamburger-icon"></div>
-          <div className="hamburger-icon"></div>
-        </button>
-        {this.state.active && (
-          <div className="hamburger-sidebar">
-            <div className="hamburger-background">
-              <a href="/#location">HOURS & LOCATION</a>
-              <a href="/#story">OUR STORY</a>
-              <a href="/#donuts">DONUTS</a>
-              <a href="/#contact">CONTACT US</a>
-            </div>
+        {!this.state.closed && (
+          <div className="hamburger-wrapper">
+            <button className="hamburger-click" onClick={() => this.openMenu()}>
+              <div className="hamburger-icon"></div>
+              <div className="hamburger-icon"></div>
+              <div className="hamburger-icon"></div>
+            </button>
+            {this.state.open && (
+              <div className="hamburger-background">
+                <button
+                  className="hamburger-close"
+                  onClick={() => {this.closeMenu(); this.openMenu()}}>close</button>
+                <a href="/#location">HOURS & LOCATION</a>
+                <a href="/#story">OUR STORY</a>
+                <a href="/#donuts">DONUTS</a>
+                <a href="/#contact">CONTACT US</a>
+              </div>
+            )}
+            <img
+              src={logo}
+              className="peter-pan-logo-white-mobile"
+              alt="peter-pan-logo"
+            />
           </div>
         )}
-        <div className="hamburger-wrapper">
-          <img
-            src={logo}
-            className="peter-pan-logo-white-mobile"
-            alt="peter-pan-logo"
-          />
-        </div>
       </div>
     );
   }
