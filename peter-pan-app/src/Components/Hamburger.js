@@ -10,9 +10,18 @@ class Hamburger extends Component {
   }
 
   openMenu = () => {
-    this.setState({
-      open: true
-    });
+    if (this.state.open === false) {
+      this.setState({
+        open: true
+      });
+      console.log("open")
+    }
+    else {
+      this.setState({
+        open: false
+      });
+      console.log("close")
+    }
   };
 
   render() {
@@ -33,11 +42,8 @@ class Hamburger extends Component {
             {this.state.open && (
               <div className="hamburger-background">
                 <button
-                  className="hamburger-click"
-                  onClick={() => this.openMenu()}
-                >
-                  close
-                </button>
+                  className="hamburger-close"
+                  onClick={() => { this.openMenu() }}>close</button>
                 <a href="/#location">HOURS & LOCATION</a>
                 <a href="/#story">OUR STORY</a>
                 <a href="/#donuts">DONUTS</a>
