@@ -564,6 +564,9 @@ footer img {
   .hamburger-click {
     position: fixed;
     right: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     cursor: pointer;
   }
   
@@ -607,8 +610,14 @@ footer img {
   }
 
   .hamburger-click {
+    background-color: #5abdac;
+    border: none;
+    box-shadow: none;
     z-index: 100;
     position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 
   .hamburger-background {
@@ -670,7 +679,7 @@ footer img {
   }
 
   .header-carousel-images {
-    margin-top: 7vh;
+    margin-top: 8vh;
     width: 100%;
     height: 35vh;
     object-fit: cover;
@@ -721,6 +730,14 @@ footer img {
   .contact-header {
     margin-top: 13vh;
   }
+
+  .hamburger-close {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 0;
+  }
+
 
   .contact-wrapper {
     padding-bottom: 0.5em;
