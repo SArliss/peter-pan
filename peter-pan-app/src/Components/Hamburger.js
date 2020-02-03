@@ -31,9 +31,15 @@ class Hamburger extends Component {
             </button>
             {this.state.open && (
               <div className="hamburger-background">
-                <div id="x-button">
-                  <div className="x-button">
-                    <div className="x-btn">
+                <div onClick={() => {
+                          this.openMenu();
+                        }} id="x-button">
+                  <div onClick={() => {
+                          this.openMenu();
+                        }} className="x-button">
+                    <div onClick={() => {
+                          this.openMenu();
+                        }} className="x-btn">
                       <button
                         className="hamburger-close"
                         onClick={() => {
