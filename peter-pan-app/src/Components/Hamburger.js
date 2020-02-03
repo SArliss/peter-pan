@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import logo from "../Images/iphone-8-hamburgermenu-group.png";
-
 class Hamburger extends Component {
   constructor(props) {
     super(props);
@@ -9,22 +8,17 @@ class Hamburger extends Component {
       closed: false
     };
   }
-
   openMenu = () => {
     if (this.state.open === false) {
       this.setState({
         open: true
       });
-      console.log("open")
-    }
-    else {
+    } else {
       this.setState({
         open: false
       });
-      console.log("close")
     }
   };
-
   render() {
     return (
       <div>
@@ -37,13 +31,23 @@ class Hamburger extends Component {
             </button>
             {this.state.open && (
               <div className="hamburger-background">
-                <button
-                  className="hamburger-close"
-                  onClick={() => { this.openMenu() }}>close</button>
-                <a href="/#location">HOURS & LOCATION</a>
-                <a href="/#story">OUR STORY</a>
-                <a href="/#donuts">DONUTS</a>
-                <a href="/#contact">CONTACT US</a>
+                <div id="x-button">
+                  <div className="x-button">
+                    <div className="x-btn">
+                      <button
+                        className="hamburger-close"
+                        onClick={() => {
+                          this.openMenu();
+                        }}
+                      ></button>
+                    </div>
+                  </div>
+                </div>
+
+                <a onClick={() => this.openMenu()} href="/#location">HOURS & LOCATION</a>
+                <a onClick={() => this.openMenu()} href="/#story">OUR STORY</a>
+                <a onClick={() => this.openMenu()} href="/#donuts">DONUTS</a>
+                <a onClick={() => this.openMenu()} href="/#contact">CONTACT US</a>
               </div>
             )}
             <img
@@ -57,5 +61,4 @@ class Hamburger extends Component {
     );
   }
 }
-
 export default Hamburger;
