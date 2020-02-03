@@ -15,13 +15,14 @@ class Hamburger extends Component {
       this.setState({
         open: true
       });
+      console.log("open")
     }
     else {
       this.setState({
         open: false
       });
+      console.log("close")
     }
-    console.log("open")
   };
 
   render() {
