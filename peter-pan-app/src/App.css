@@ -67,10 +67,10 @@ section {
   font-weight: 600;
   color: #f1f1f1;
   font-size: 1.5em;
-  padding: 0.25em 0em 0.25em 5em;
+  padding: 0 auto;
   line-height: 0.1em;
   background-color: #a8426e;
-}
+} 
 
 .fixed-header p,
 .fixed-header a {
