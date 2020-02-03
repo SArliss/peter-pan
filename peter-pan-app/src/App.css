@@ -43,7 +43,7 @@ section {
   letter-spacing: 10px;
   text-align: center;
   color: white;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .bold {
@@ -67,7 +67,7 @@ section {
   font-weight: 600;
   color: #f1f1f1;
   font-size: 1.5em;
-  padding: .25em 0em .25em 5em;
+  padding: 0.25em 0em 0.25em 5em;
   line-height: 0.1em;
   background-color: #a8426e;
 }
@@ -75,7 +75,7 @@ section {
 .fixed-header p,
 .fixed-header a {
   text-decoration: none;
-  color: #ffffff; 
+  color: #ffffff;
   padding: 0.3em 0.5em;
   margin: 0.5em auto;
 }
@@ -169,7 +169,12 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(to right, rgba(136, 42, 78, 0.5), rgb(136, 42, 78, 0.5)), url('./Images/location-section-image.png');
+  background: linear-gradient(
+      to right,
+      rgba(136, 42, 78, 0.5),
+      rgb(136, 42, 78, 0.5)
+    ),
+    url("./Images/location-section-image.png");
   /* background-image: url(./Images/location-section-image.png); */
   width: 100vw;
   height: 30vw;
@@ -224,7 +229,12 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(to right, rgba(136, 42, 78, 0.5), rgb(136, 42, 78, 0.5)), url('./Images/story-section-image.png');
+  background: linear-gradient(
+      to right,
+      rgba(136, 42, 78, 0.5),
+      rgb(136, 42, 78, 0.5)
+    ),
+    url("./Images/story-section-image.png");
   /* background-image: url(./Images/story-section-image.png); */
   background-position-y: 40%;
   background-position-x: 90%;
@@ -276,7 +286,12 @@ button {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  background: linear-gradient(to right, rgba(136, 42, 78, 0.5), rgb(136, 42, 78, 0.5)), url('./Images/donut-section-image.png');
+  background: linear-gradient(
+      to right,
+      rgba(136, 42, 78, 0.5),
+      rgb(136, 42, 78, 0.5)
+    ),
+    url("./Images/donut-section-image.png");
   /* background-image: url("./Images/donut-section-image.png"); */
   background-position-y: 65%;
   background-position-x: 100%;
@@ -451,7 +466,7 @@ footer {
 }
 
 .footer-icons img:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .footer-phone {
@@ -596,7 +611,7 @@ footer img {
   }
 
   .hamburger-background {
-    height:500px;
+    height: 400px;
     position: fixed;
   }
 
@@ -637,18 +652,18 @@ footer img {
     top: 20%;
   }
   div.footer-text {
-  line-height: 0.1em;
-  padding-bottom: 1em;
-  margin-bottom: 0.2em auto;
+    line-height: 0.1em;
+    padding-bottom: 1em;
+    margin-bottom: 0.2em auto;
   }
 
   div.footer-icons {
-  line-height: 0.1em;
-  padding: 0.2em;
-  margin: 0.2em auto;
+    line-height: 0.1em;
+    padding: 0.2em;
+    margin: 0.2em auto;
   }
 
-  .designed-by{
+  .designed-by {
     margin-bottom: 6em;
     padding-bottom: 3em;
   }
@@ -672,5 +687,30 @@ footer img {
   .donuts-header-bg-image {
     width: 100vw;
     height: 50vw;
+  }
+
+  #x-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 40px;
+  }
+
+  .x-button {
+    height: 25px;
+    width: 2px;
+    margin-left: 12px;
+    background-color: black;
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+
+  .x-btn {
+    height: 25px;
+    width: 2px;
+    background-color: black;
+    transform: rotate(90deg);
+    z-index: 2;
   }
 }
