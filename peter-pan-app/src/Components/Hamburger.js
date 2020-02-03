@@ -5,8 +5,7 @@ class Hamburger extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: false,
-      closed: false
+      open: false
     };
   }
 
@@ -14,42 +13,37 @@ class Hamburger extends Component {
     this.setState({
       open: true
     });
-    console.log("open")
-  };
-
-  closeMenu = () => {
-    this.setState({
-      closed: true
-    });
-    console.log("closed")
   };
 
   render() {
     return (
       <div>
-        {!this.state.closed && (
+        {this.state.open && (
           <div className="hamburger-wrapper">
             <button className="hamburger-click" onClick={() => this.openMenu()}>
               <div className="hamburger-icon"></div>
               <div className="hamburger-icon"></div>
               <div className="hamburger-icon"></div>
             </button>
+            <img
+              src={logo}
+              className="peter-pan-logo-white-mobile"
+              alt="peter-pan-logo"
+            />
             {this.state.open && (
               <div className="hamburger-background">
                 <button
-                  className="hamburger-close"
-                  onClick={() => {this.closeMenu(); this.openMenu()}}>close</button>
+                  className="hamburger-click"
+                  onClick={() => this.openMenu()}
+                >
+                  close
+                </button>
                 <a href="/#location">HOURS & LOCATION</a>
                 <a href="/#story">OUR STORY</a>
                 <a href="/#donuts">DONUTS</a>
                 <a href="/#contact">CONTACT US</a>
               </div>
             )}
-            <img
-              src={logo}
-              className="peter-pan-logo-white-mobile"
-              alt="peter-pan-logo"
-            />
           </div>
         )}
       </div>
