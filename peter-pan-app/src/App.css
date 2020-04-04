@@ -505,14 +505,19 @@ footer img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #5abdac;
+    background-color: #5abdacd0;
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     z-index: 1000;
+  }
+
+  .hamburger-background {
+    height: 45vh;
+    position: fixed;
   }
   
   .hamburger-background a {
-    margin: 1.8em auto;
+    margin: 1.5em auto;
     width: 100vw;
     height: 0.4em;
     font-family: "Work Sans";
@@ -535,11 +540,6 @@ footer img {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-  }
-
-  .hamburger-background {
-    height: 60vh;
-    position: fixed;
   }
 
   .peter-pan-logo-green-container {
