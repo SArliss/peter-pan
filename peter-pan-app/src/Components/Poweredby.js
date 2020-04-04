@@ -2,7 +2,7 @@ import React from 'react';
 
 function Powered() {
   return (
-    <div className="designed-by">
+    <div className="powered-by">
       <p> POWERED BY POMS UX & SEI CHEETAHS</p>
     </div>
 

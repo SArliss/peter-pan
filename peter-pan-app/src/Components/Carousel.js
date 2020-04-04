@@ -12,8 +12,8 @@ function Carousel() {
     lazyload: true,
     controls: false,
     arrowKeys: true,
-    speed: 400,
-    autoplayTimeout: 3900,
+    speed: 3000,
+    autoplayTimeout: 9000,
     autoplayButtonOutput: false,
     touch: true,
     autoplay: true,
@@ -40,7 +40,7 @@ function Carousel() {
     "data:image/gif;base64, R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==";
 
   return (
-    <div>
+    <div className="first-page">
       <div className="peter-pan-logo-green-container">
         <img src={logo} className="peter-pan-logo-green" alt="peter-pan-logo" />
       </div>
