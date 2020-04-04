@@ -44,6 +44,11 @@ function Carousel() {
       <div className="peter-pan-logo-green-container">
         <img src={logo} className="peter-pan-logo-green" alt="peter-pan-logo" />
       </div>
+
+      <p className="header-tagline">
+        Serving Greenpoint Fresh Donuts Everyday Since 1955.
+      </p>
+      
       <TinySlider settings={settings} className="header-carousel">
         {imgs.map((el, index) => (
           <div key={index} style={{ position: "relative" }}>
@@ -57,9 +62,6 @@ function Carousel() {
           </div>
         ))}
       </TinySlider>
-      <p className="header-tagline">
-        Serving Greenpoint Fresh Donuts Everyday Since 1955.
-      </p>
     </div>
   );
 }

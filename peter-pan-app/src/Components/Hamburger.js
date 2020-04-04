@@ -32,14 +32,14 @@ class Hamburger extends Component {
             {this.state.open && (
               <div className="hamburger-background">
                 <div onClick={() => {
-                          this.openMenu();
-                        }} id="x-button">
+                  this.openMenu();
+                }} id="x-button">
                   <div onClick={() => {
-                          this.openMenu();
-                        }} className="x-button">
+                    this.openMenu();
+                  }} className="x-button">
                     <div onClick={() => {
-                          this.openMenu();
-                        }} className="x-btn">
+                      this.openMenu();
+                    }} className="x-btn">
                       <button
                         className="hamburger-close"
                         onClick={() => {
@@ -61,6 +61,9 @@ class Hamburger extends Component {
               className="peter-pan-logo-white-mobile"
               alt="peter-pan-logo"
             />
+            <div className="mobile-tagline">
+              <p> Serving Greenpoint Fresh Donuts Everyday Since 1955.</p>
+            </div>
           </div>
         )}
       </div>

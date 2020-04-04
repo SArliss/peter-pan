@@ -7,9 +7,9 @@ function Header() {
 
       <div className="fixed-header" id="fixed-header">
         <a href="tel:1-718-389-3676">(718) 389-3676</a>
-        <p>Today’s Hours: 4:30AM TO 8:00PM</p>
+        <p>Today’s Hours: 8:00AM TO 5:00PM</p>
         <a href="https://www.google.com/maps/search/?api=1&query=Peter+Pan+Donut+%26+Pastry%26nbsp%3BShop&query_place_id=ChIJfR8jHkRZwokRgllkzTBqhlM"
-          target="_blank">727 Manhattan Ave, Brooklyn NY 11222
+          target="_blank" rel="noopener noreferrer">727 Manhattan Ave, Brooklyn NY 11222
         </a>
       </div>
 
