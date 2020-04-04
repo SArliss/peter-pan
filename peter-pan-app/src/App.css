@@ -648,8 +648,9 @@ footer img {
     z-index: 2;
   }
 
-  .contact-header {
-    margin-top: 13vh;
+  #contact.contact-wrapper{
+    margin-top: 1em;
+    padding: 1em auto;
   }
 
   .hamburger-close {
@@ -657,10 +658,6 @@ footer img {
     -moz-appearance: none;
     appearance: none;
     opacity: 0;
-  }
-
-  .contact-wrapper {
-    padding-bottom: 0.5em;
   }
 
   .story-text{
@@ -672,8 +669,12 @@ footer img {
   }
 
   .img-wrapper {
-  padding: 2em;
+   padding: 2em;
   }
+
+  .img-wrapper img {
+    height: 30vw;
+   }
 
 }
 
