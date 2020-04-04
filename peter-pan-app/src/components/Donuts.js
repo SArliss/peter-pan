@@ -17,7 +17,7 @@ const Donuts = () => {
       </p>
       <div className="donuts-list-wrapper">
         <div className="bestselling-donuts-list">
-          <h1>BEST SELLERS</h1>
+          <h4>BEST SELLERS</h4>
           <ul>
             <li>Old Fashioned Glazed</li>
             <li>Red Velvet</li>
@@ -28,7 +28,7 @@ const Donuts = () => {
           </ul>
         </div>
         <div className="specialties-donuts-list-wrapper">
-          <h1>SPECIALTIES</h1>
+          <h4>SPECIALTIES</h4>
           <div className="specialties-donuts-list-inner-wrapper">
             <div className="specialties-donuts-list-section-one">
               <ul>
