@@ -255,7 +255,7 @@ nav a:hover {
 .story-text {
   padding: 5em auto;
   margin: 0 auto;
-  max-width: 90vw;
+  max-width: 60vw;
   font-family: "Work Sans";
   font-size: 1.1em;
   text-align: left;
@@ -703,7 +703,7 @@ footer img {
   }
 
   .story-text{
-    width: 70vw;
+    max-width: 80vw;
   }
 
   .for-all-ques, .we-love {
