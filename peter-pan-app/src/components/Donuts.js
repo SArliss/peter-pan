@@ -8,7 +8,7 @@ const Donuts = () => {
         <h1 className="section-header">DONUTS</h1>
       </div>
 
-      <h3>Baked Fresh Daily <a href="tel:1-718-389-3676">Order Ahead</a> Today!</h3>
+      <h3>Baked Fresh Daily. <a href="tel:1-718-389-3676">Order Ahead</a> Today!</h3>
 
       <div>
         <h3>All Donuts $1.25 | 6 $7.50 | 12 $13.99</h3>

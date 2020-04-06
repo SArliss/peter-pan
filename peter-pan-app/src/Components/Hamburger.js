@@ -56,11 +56,12 @@ class Hamburger extends Component {
                 <a onClick={() => this.openMenu()} href="/#contact">CONTACT US</a>
               </div>
             )}
-            <img
+            <a href="/.fixed-wrapper"><img
               src={logo}
               className="peter-pan-logo-white-mobile"
               alt="peter-pan-logo"
             />
+            </a>
             <div className="mobile-tagline">
               <p> Serving Greenpoint Fresh Donuts Everyday Since 1955.</p>
             </div>

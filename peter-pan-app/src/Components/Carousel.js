@@ -12,7 +12,7 @@ function Carousel() {
     lazyload: true,
     controls: false,
     arrowKeys: true,
-    speed: 3000,
+    speed: 2500,
     autoplayTimeout: 9000,
     autoplayButtonOutput: false,
     touch: true,
@@ -20,7 +20,7 @@ function Carousel() {
     nav: false,
     loop: true,
     items: 1,
-    gutter: 5,
+    gutter: 0,
     responsive: {
       420: {
         items: 1

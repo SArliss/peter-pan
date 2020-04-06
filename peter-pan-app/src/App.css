@@ -43,11 +43,10 @@ section {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
+  margin: 3.5em auto;
   padding: 3em auto;
   width: 100vw;
-  height: 15vw;
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bold;
   letter-spacing: 0.2em;
   text-align: center;
@@ -121,6 +120,7 @@ nav a:hover {
   width: 100vw;
   height: 80vh;
   object-fit: cover;
+  background-color: #ffecec;
 }
 
 #header-carousel-image0 {
@@ -179,7 +179,7 @@ nav a:hover {
   font-family: "Work Sans";
   font-size: 1.1em;
   color: #24522a;
-  margin: 3em auto;
+  margin: 2em auto;
 }
 
 .address-wrapper {
@@ -239,8 +239,6 @@ nav a:hover {
 .story-section-logo {
   display: flex;
   justify-content: center;
-  border: solid 0.01em #979797;
-  background-color: rgba(5, 5, 5, 0.8);
 }
 
 .story-section-logo > img {
@@ -257,7 +255,7 @@ nav a:hover {
 .story-text {
   padding: 5em auto;
   margin: 0 auto;
-  max-width: 65vw;
+  max-width: 90vw;
   font-family: "Work Sans";
   font-size: 1.1em;
   text-align: left;
@@ -265,9 +263,8 @@ nav a:hover {
 }
 
 .story-text p {
-  margin: 2.5em auto;
+  margin: 1.5em auto;
 }
-
 
 
 /* DONUT SECTION STYLING */
@@ -293,17 +290,20 @@ nav a:hover {
   background-position-y: 65%;
   background-position-x: 100%;
   width: 100vw;
-  height: 20vw;
+  height: 20em;
   opacity: 0.6;
 }
 
 #donuts h3 {
-  color: #24522a;
-  padding: 0 1em;
+  color: #2a5844;
+  padding: 0 0.5em;
+  font-weight: 600;
+  font-size: 1.07em;
 }
 
 #donuts a {
-  color: #24522a;
+  color: #2a5844;
+  font-weight: 600;
 }
 
 .all-donuts {
@@ -320,6 +320,12 @@ nav a:hover {
   background-color: lightpink;
   padding: 1em;
   width: 13em;
+  border-radius: 1em;
+}
+
+.all-donuts p {
+  color: #3e3a2d;
+  line-height: 0.7em;
 }
 
 /* CONTACT SECTION STYLING */
@@ -328,7 +334,7 @@ nav a:hover {
   flex-wrap: wrap;
   flex-direction: column;
   margin: 0 auto;
-  font-size: 1.2em;
+  font-size: 1em;
   width: 100vw;
   border: solid 1px #979797;
   background-color: #d16e99;
@@ -352,8 +358,8 @@ nav a:hover {
 
 #contact div {
   margin: 0 auto;
-  padding: 0.1em;
-  font-weight: bold;
+  padding: 0 0.2em;
+  font-weight: 600;
   text-align: center;
   text-align: center;
   color: #3e3a2d;
@@ -479,7 +485,7 @@ footer img {
     display: flex;
     align-items: stretch;
     width: 100vw;
-    height: 6em;
+    height: 5em;
     background-color: #5abdac;
   }
   
@@ -502,33 +508,34 @@ footer img {
   }
   
   .hamburger-background {
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #5abdacf1;
     width: 100vw;
-    height: 60vh;
     z-index: 1000;
-  }
-
-  .hamburger-background {
-    height: 45vh;
-    position: fixed;
+    border-top: 0.1em solid #3e8c7ff1;
+    border-left: 0.1em solid #3e8c7ff1;
+    border-right: 0.1em solid #3e8c7ff1;
+    box-sizing: border-box;
   }
   
   .hamburger-background a {
-    margin: 1.5em auto;
+    margin: 0 auto;
+    padding: 1.8em 0;
     width: 100vw;
-    height: 0.4em;
-    font-family: "Work Sans";
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: bold;
     text-align: center;
     color: #355142;
+    border-bottom: 0.1em solid #3e8c7ff1;
+    text-decoration: none;
   }
   
   .hamburger-background a:hover {
     color: white;
+    text-decoration: underline;
   }
 
   .hamburger-click {
@@ -551,8 +558,8 @@ footer img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 12em;
-    height: 12em;
+    width: 11em;
+    height: 11em;
     object-fit: contain;
     z-index: 20;
     left: 1em;
@@ -569,16 +576,16 @@ footer img {
     padding: 0em;
     z-index: 20;
     left: 0;
-    top: 6.9em;
+    top: 6em;
     font-size: 0.8em;
     margin: 0 auto;
     text-align: left;
-    color: rgb(8, 43, 38);
+    color: rgb(14, 68, 52);
     background-color: rgb(76, 172, 148);
   }
 
   .mobile-tagline p {
-    margin: 0.9em 1em;
+    margin: 0.7em 0.5em 0.7em 1em;
   }
 
   .powered-by {
@@ -603,6 +610,10 @@ footer img {
     margin: 0.2em auto;
   }
 
+  .header-tagline {
+    display: none;
+  }
+
   .header-carousel-images {
     margin-top: 0;
     width: 100vw;
@@ -611,39 +622,71 @@ footer img {
     box-sizing: border-box;
   }
 
+  #header-carousel-image0 {
+    object-position: 65%;
+  }
+  
+  #header-carousel-image1 {
+    object-position: 0%;
+  }
+
+  #header-carousel-image2 {
+    object-position: 0%;
+  }
+  
+  #header-carousel-image3 {
+    object-position: 50%;
+  }
+
+  #header-carousel-image4 {
+    object-position: 50%;
+  }
+
   .story-header-bg-image,
   .hours-location-header-bg-image,
   .donuts-header-bg-image {
     width: 100vw;
-    height: 32vh;
+    height: 22em;
   }
 
-  .section-header {
-    margin-top: 5em;
+  .story-header-bg-image {
+    background-position-y: 20%;
+    background-position-x: 20%;
+  }
+
+  .hours-location-header-bg-image{
+    background-position-y: 0%;
+    background-position-x: 43%;
+  }
+
+  .donuts-header-bg-image {
+    background-position-y: 45%;
+    background-position-x: 50%;
   }
 
   #x-button {
     position: fixed;
-    top: 0.1em;
-    right: 0.1em;
-    width: 2em;
-    height: 2em;
+    top: 0;
+    right: 0;
     cursor: pointer;
+    padding: 0.7em 1.2em;
+    background-color: rgba(219, 254, 240, 0.767);
+    border: 0.1em solid #3e8c7ff1;
+  }
+
+  #x-button:hover {
+  background-color: rgba(255, 255, 255, 0.94);
   }
 
   .x-button {
-    height: 35px;
-    width: 2px;
-    margin-left: 12px;
-    background-color: black;
+    width: 0.2em;
+    background-color: #3e8c7f;
     transform: rotate(45deg);
     z-index: 1;
   }
 
   .x-btn {
-    height: 35px;
-    width: 2px;
-    background-color: black;
+    background-color: #3e8c7f;
     transform: rotate(90deg);
     z-index: 2;
   }
