@@ -617,7 +617,7 @@ footer img {
   .header-carousel-images {
     margin-top: 0;
     width: 100vw;
-    height: 92vh;
+    height: 100vh;
     object-fit: cover;
     box-sizing: border-box;
   }

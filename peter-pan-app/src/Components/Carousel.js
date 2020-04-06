@@ -13,7 +13,7 @@ function Carousel() {
     controls: false,
     arrowKeys: true,
     speed: 2500,
-    autoplayTimeout: 9000,
+    autoplayTimeout: 7000,
     autoplayButtonOutput: false,
     touch: true,
     autoplay: true,
