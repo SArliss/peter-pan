@@ -56,7 +56,7 @@ class Hamburger extends Component {
                 <a onClick={() => this.openMenu()} href="/#contact">CONTACT US</a>
               </div>
             )}
-            <a href="/.fixed-wrapper"><img
+            <a href="/#first-page"><img
               src={logo}
               className="peter-pan-logo-white-mobile"
               alt="peter-pan-logo"

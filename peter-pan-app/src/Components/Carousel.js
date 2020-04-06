@@ -40,7 +40,7 @@ function Carousel() {
     "data:image/gif;base64, R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==";
 
   return (
-    <div className="first-page">
+    <div className="first-page" id="first-page">
       <div className="peter-pan-logo-green-container">
         <img src={logo} className="peter-pan-logo-green" alt="peter-pan-logo" />
       </div>
