@@ -1,7 +1,7 @@
 import React from "react";
 
 //Custom Components
-import Carousel from "./Components/Carousel";
+import Landing from "./Components/Landing";
 import Location from "./Components/Location";
 import Story from "./Components/Story";
 import Donuts from "./Components/Donuts.js";
@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <Header />
       <Hamburger />
-      <Carousel />
+      <Landing />
       <Location />
       <Story />
       <Donuts />
