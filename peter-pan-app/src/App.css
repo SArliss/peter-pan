@@ -129,6 +129,8 @@ nav a:hover {
   height: 80vh;
   object-fit: cover;
   background-color: #ffecec;
+  background-image: url(./Images/carousel-image-5.png);
+  background-size: cover;
   animation: fadein 3s;
 }
 
