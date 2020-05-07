@@ -1,5 +1,4 @@
 import React from "react";
-import banner from "../Images/peterpanbanner.png";
 import donutGif from "../Images/donut-gif.gif";
 import homerGif from "../Images/homer-gif.gif";
 

@@ -9,10 +9,17 @@
   font-family: "Work Sans";
   background-color: #ffecec;
   overflow-y: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   text-align: center;
   z-index: -1;
   box-sizing: border-box;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0}
+  to   { opacity: 1}
 }
 
 body {
@@ -114,6 +121,7 @@ nav a:hover {
 
 .header-carousel {
   width: 100vw;
+  animation: fadein 3s;
 }
 
 .header-carousel-images {
@@ -121,6 +129,7 @@ nav a:hover {
   height: 80vh;
   object-fit: cover;
   background-color: #ffecec;
+  animation: fadein 3s;
 }
 
 #header-carousel-image0 {
