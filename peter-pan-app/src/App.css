@@ -471,6 +471,7 @@ footer img {
 }
 
 @media only screen and (max-width: 800px) {
+
   .hamburger-wrapper {
     position: fixed;
     z-index: 10;
@@ -504,30 +505,39 @@ footer img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #5abdacf1;
+    background-color: #5abdac;
     width: 100vw;
     z-index: 1000;
-    border-top: 0.1em solid #3e8c7ff1;
-    border-left: 0.1em solid #3e8c7ff1;
-    border-right: 0.1em solid #3e8c7ff1;
+    border-top: 0.1em solid rgb(98, 199, 182);
+    border-left: 0.1em solid rgb(98, 199, 182);
+    border-right: 0.1em solid rgb(98, 199, 182);
     box-sizing: border-box;
+    animation: slidedown 0.5s;
+  }
+  
+  @keyframes slidedown {
+    from { top: -50em}
+    to   { top: 0}
   }
   
   .hamburger-background a {
     margin: 0 auto;
-    padding: 1.8em 0;
+    padding: 1.5em 0;
     width: 100vw;
     font-size: 1em;
     font-weight: bold;
     text-align: center;
     color: #355142;
-    border-bottom: 0.1em solid #3e8c7ff1;
+    border-bottom: 0.1em solid rgb(98, 199, 182);
     text-decoration: none;
   }
   
   .hamburger-background a:hover {
     color: white;
-    text-decoration: underline;
+  }
+
+  .hamburger-background > a:first-of-type {
+    padding-top: 3.5em;
   }
 
   .hamburger-click {
@@ -539,6 +549,66 @@ footer img {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+  }
+
+  .hamburger-close {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 0;
+  }
+
+  #x-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 1.1em 1.8em;
+    background-color: #5abdac;
+  }
+
+  #x-button:hover {
+    background-color: #64c9b8;
+  }
+
+  .x-button {
+    width: 0.2em;
+    background-color: #3e8c7f;
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+
+  .x-btn {
+    background-color: #3e8c7f;
+    transform: rotate(90deg);
+    z-index: 2;
+  }
+
+  footer {
+    padding-bottom: 0.5em;
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+
+  div.footer-text {
+    line-height: 0.1em;
+    padding-bottom: 1em;
+    margin-bottom: 0.2em auto;
+  }
+
+  div.footer-icons {
+    line-height: 0.1em;
+    padding: 0.2em;
+    margin: 0.2em auto;
+  }
+
+  .front-page-donuts {
+    margin-top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    box-sizing: border-box;
+    object-position: 81% 50%;
   }
 
   .peter-pan-logo-green-container {
@@ -559,6 +629,10 @@ footer img {
   }
 
   .fixed-wrapper {
+    display: none;
+  }
+
+  .header-tagline {
     display: none;
   }
 
@@ -584,73 +658,8 @@ footer img {
     padding: 1em 0 8em 0;
   }
 
-  footer {
-    padding-bottom: 0.5em;
-    font-size: 0.8em;
-    font-weight: 600;
-  }
-
-  div.footer-text {
-    line-height: 0.1em;
-    padding-bottom: 1em;
-    margin-bottom: 0.2em auto;
-  }
-
-  div.footer-icons {
-    line-height: 0.1em;
-    padding: 0.2em;
-    margin: 0.2em auto;
-  }
-
-  .header-tagline {
-    display: none;
-  }
-
-  .front-page-donuts {
-    margin-top: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    box-sizing: border-box;
-    object-position: 81% 50%;
-  }
-
-  #x-button {
-    position: fixed;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    padding: 0.7em 1.2em;
-    background-color: rgba(219, 254, 240, 0.767);
-    border: 0.1em solid #3e8c7ff1;
-  }
-
-  #x-button:hover {
-  background-color: rgba(255, 255, 255, 0.94);
-  }
-
-  .x-button {
-    width: 0.2em;
-    background-color: #3e8c7f;
-    transform: rotate(45deg);
-    z-index: 1;
-  }
-
-  .x-btn {
-    background-color: #3e8c7f;
-    transform: rotate(90deg);
-    z-index: 2;
-  }
-
   .contact-header{
     margin-top: 0.9em;
-  }
-
-  .hamburger-close {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    opacity: 0;
   }
 
   .story-text{
