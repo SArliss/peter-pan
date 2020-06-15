@@ -320,6 +320,10 @@ nav a:hover {
   line-height: 0.7em;
 }
 
+#big-donut {
+  display: none;
+}
+
 /* CONTACT SECTION STYLING */
 .contact-wrapper {
   display: flex;
@@ -677,6 +681,47 @@ footer img {
   .img-wrapper img {
     height: 30vw;
    }
+
+   .hours-location-header-bg-image,
+   .story-header-bg-image,
+   .donuts-header-bg-image {
+    height: 8em;
+    padding-top: 7em;
+   }
+
+   .hours-location-inner-wrapper, .story-text-wrapper, .donuts-wrapper{
+    padding-bottom: 7em;
+   }
+
+
+   .hours-location-header-bg-image {
+    background: #ffecec;
+   }
+
+   .hours-location-header-bg-image h1{
+    color: #e9428b;
+   }
+
+   .story-header-bg-image {
+    background: #ab0761;
+   }
+
+   .donuts-header-bg-image {
+    background: #ffecec;
+   }
+
+   .donuts-header-bg-image h1 {
+    color: #e9428b;
+   }
+
+   #big-donut {
+    display: flex;
+    margin: -4vw auto 6vw auto;
+    width: 17vw;
+  }
+
+  
+
 
 }
 

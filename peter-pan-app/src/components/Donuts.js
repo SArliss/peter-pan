@@ -1,4 +1,5 @@
 import React from "react";
+import bigDonut from "../Images/big-donut.png";
 
 const Donuts = () => {
   return (
@@ -7,6 +8,8 @@ const Donuts = () => {
       <div className="donuts-header-bg-image">
         <h1 className="section-header">DONUTS</h1>
       </div>
+
+      <img src={bigDonut} id="big-donut" alt="donut"></img>
 
       <h3>Baked Fresh Daily. <a href="tel:1-718-389-3676">Order Ahead</a> Today!</h3>
 
