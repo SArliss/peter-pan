@@ -4,7 +4,7 @@ function Location() {
   return (
     <div id="location">
       <div className="hours-location-header-bg-image">
-        <h1 className="section-header">HOURS & <br /> LOCATION</h1>
+        <h1 className="section-header">HOURS & LOCATION</h1>
       </div>
       <div className="hours-location-inner-wrapper">
         <section className="address-wrapper">
